@@ -1,0 +1,70 @@
+@import url('styles/_variaveis.css');
+
+.collection_display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    width: 15em;
+    height: 16em;
+    box-shadow: 0px 0px 20px var(--roxo);
+    margin-top: 1.5em;
+    margin-bottom: 2.3em;
+}
+
+.collection_display:hover {
+    box-shadow: 0px 0px 30px var(--rosa);
+}
+
+.collection_img {
+    width: 100%;
+    height: 11em;
+    border-top-left-radius: 20px;
+}
+
+.selected_collection_img {
+    object-fit: cover;
+}
+
+.default_img {
+    object-fit: contain;
+}
+
+.collection_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--azul-claro);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40%;
+}
+
+@media only screen and (max-width: 700px) {
+    .collection_display {
+        width: 85%;
+    }
+
+    .collection_img {
+        height: 12em;
+    }
+
+    .collection_name {
+        font-size: 1.5em;
+        height: 34%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .collection_display {
+        width: 80%;
+    }
+
+    .collection_name {
+        font-size: 1.5em;
+    }
+}

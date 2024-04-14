@@ -1,0 +1,76 @@
+.ingredients_list {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.coluna_quantidade {
+    width: 15%;
+}
+
+.coluna_medida {
+    width: 10%;
+}
+
+.coluna_ingrediente {
+    width: 50%;
+}
+
+.coluna_custo {
+    width: 10%;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .coluna_quantidade {
+        width: 17%;
+    }
+
+    .coluna_medida {
+        width: 12%;
+    }
+
+    .coluna_ingrediente {
+        width: 45%;
+    }
+    .coluna_custo {
+        width: 10%;
+    }
+
+    .ingredient_input {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .coluna_quantidade {
+        width: 16%;
+    }
+
+    .coluna_medida {
+        width: 12%;
+    }
+
+    .coluna_ingrediente {
+        width: 57%;
+    }
+    .coluna_custo {
+        width: 15%;
+    }
+
+    .ingredients_list {
+        font-size: 0.7em;
+    }
+    .ingredient_inputs_list {
+        display: block;
+    }
+
+    .ingredient_input {
+        width: 50%;
+        margin-bottom: 1.2em;
+    }
+
+}

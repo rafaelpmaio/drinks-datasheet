@@ -1,0 +1,17 @@
+.collections_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 0;
+}
+
+.collections_card p {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .collections_card {
+        padding: 0;
+    }
+}

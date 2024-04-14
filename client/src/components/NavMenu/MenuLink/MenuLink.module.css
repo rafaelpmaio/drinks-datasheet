@@ -1,0 +1,12 @@
+@import url('styles/_variaveis.css');
+.link {
+    color: var(--azul-escuro);
+}
+
+.link:hover {
+    color: var(--roxo)
+}
+
+a {
+    text-decoration: none;
+  }

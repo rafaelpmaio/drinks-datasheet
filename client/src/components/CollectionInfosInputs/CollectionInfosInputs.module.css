@@ -1,0 +1,28 @@
+.input {
+    margin: 1.2em 0;
+  }
+
+  .fileSelectionArea {
+    position: relative;
+    margin-top: 2em;
+}
+
+.image {
+    width: 200px;
+}
+
+  @media only screen and (max-width: 440px) {
+
+    .input {
+        margin-bottom: 2.5em;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+
+    .input {
+        font-size: 0.8em;
+    }
+
+}

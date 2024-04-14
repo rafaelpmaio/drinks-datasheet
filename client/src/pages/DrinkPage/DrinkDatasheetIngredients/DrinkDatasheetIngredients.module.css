@@ -1,0 +1,46 @@
+.amount_column {
+    width: 8%;
+}
+
+.measure_unit_column {
+    width: 8%;
+}
+
+.ingredient_column {
+    width: 40%;
+}
+
+.cost_column {
+    width: 9%;
+}
+
+.ingredients_row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    .ingredients_row {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ingredients_row {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ingredients_row {
+        font-size: 0.7em;
+    }
+
+    .ingredients_row {
+        margin-bottom: 1.5em;
+        
+    }
+}
+

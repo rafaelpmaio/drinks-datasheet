@@ -1,0 +1,55 @@
+@import url('styles/_variaveis.css');
+
+.drinkDisplay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15em;
+    height: 20em;
+    padding: 0;
+}
+
+.drink_image {
+    width: 100%;
+    height: 15em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.drink_name {
+    background-color: white;
+    color: var(--azul-claro);
+    margin: 0;
+    padding: 20px 0 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.drinkDisplay:hover {
+    box-shadow: 0 0 40px var(--rosa);
+}
+
+@media only screen and (max-width: 680px) {
+    .drinkDisplay {
+        width: 20em;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .drinkDisplay {
+        width: 12em;
+        height: 12em;
+        margin: 1.5em 0 1.5em 0;
+    }
+
+    .drink_image {
+        height: 8em;
+    }
+
+    .drink_name {
+        font-size: 1.2em;
+    }
+
+}

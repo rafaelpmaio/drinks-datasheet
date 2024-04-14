@@ -1,0 +1,683 @@
+[
+    {
+      "name": "Summer Season",
+      "image": "summer-collection.webp",
+      "description": "Valid untill March 2023",
+      "drinksList": [
+        {
+          "name": "Caipirinha",
+          "image": "caipirinha.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Cachaça",
+              "cost": 1.6
+            },
+            {
+              "amount": 1,
+              "measureUnit": "un",
+              "ingredient": "Limão Tahiti",
+              "cost": 0
+            },
+            {
+              "amount": 15,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 1.5
+            }
+          ],
+          "steps": [
+            "Colocar o limão e o açúcar na parte pequena da coqueteleira e macerar",
+            "Adicionar a cachaça e gelo na coqueteleira e bater bem",
+            "Passar para o copo Y e finalizar com uma rodela de limão"
+          ],
+          "garnish": "Rodela de limão",
+          "glassware": "Copo Y",
+          "confectionCost": 3.1,
+          "sellPrice": 39,
+          "costPercentage": 7.94
+        },
+        {
+          "name": "Gin Tonic",
+          "image": "gin-tonic.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Gin",
+              "cost": 6.3
+            },
+            {
+              "amount": 200,
+              "measureUnit": "ml",
+              "ingredient": "Tônica",
+              "cost": 2.8
+            },
+            {
+              "amount": 1,
+              "measureUnit": "un",
+              "ingredient": "Rodela Limão Siciliano",
+              "cost": 0
+            },
+            {
+              "amount": 1,
+              "measureUnit": "un",
+              "ingredient": "Ramo Alecrim",
+              "cost": 0
+            }
+          ],
+          "steps": [
+            "Adicionar gelo até encher a taça",
+            "Adicionar o gin e completar com tônica ",
+            "Colocar rodela de limão siciliano e Ramo de Alecrim mexer levemente com a bailarina"
+          ],
+          "garnish": "Flor de Hibiscus",
+          "glassware": "Taça de Gin",
+          "confectionCost": 9.1,
+          "sellPrice": 45,
+          "costPercentage": 20.22
+        },
+        {
+          "name": "Aperol Spritz",
+          "image": "aperol-spritz.webp",
+          "ingredients": [
+            {
+              "amount": 70,
+              "measureUnit": "ml",
+              "ingredient": "Aperol",
+              "cost": 3.75
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Água com Gás",
+              "cost": 0.2
+            },
+            {
+              "amount": 100,
+              "measureUnit": "ml",
+              "ingredient": "Espumante Brut",
+              "cost": 12.75
+            }
+          ],
+          "steps": [
+            "Adicionar gelo até encher a taça",
+            "Adicionar o Aperol, água e completar com espumante ",
+            "Mexer o drink com a bailarina e finalizar com a rodela de laranja "
+          ],
+          "garnish": "Rodela de Limão",
+          "glassware": "Taça de Gin",
+          "confectionCost": 16.7,
+          "sellPrice": 44,
+          "costPercentage": 37.95
+        },
+        {
+          "name": "Mojito",
+          "image": "mojito.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Rum Prata",
+              "cost": 4.56
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 0.2
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 120,
+              "measureUnit": "ml",
+              "ingredient": "Água com Gás",
+              "cost": 2.5
+            },
+            {
+              "amount": 12,
+              "measureUnit": "un",
+              "ingredient": "Folha de Hortelã",
+              "cost": 0
+            }
+          ],
+          "steps": [
+            "Pegar as folhas de hortelã e bater para soltar o aroma",
+            "Colocar as folhas de hortelã no copo e adicionar o xarope e o suco de limão",
+            "Adicionar gelo até encher o copo",
+            "Adicionar rum e completar com água com gás",
+            "Mexer levemente com a bailarina para subir as folhas do fundo do copo",
+            "Finalizar com ramo de hortelã"
+          ],
+          "garnish": "Ramo de Hortelã",
+          "glassware": "Long drink",
+          "confectionCost": 7.26,
+          "sellPrice": 35,
+          "costPercentage": 20.74
+        },
+        {
+          "name": "Margarita",
+          "image": "margarita.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Tequila Prata",
+              "cost": 8
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Cointreau",
+              "cost": 2.75
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope simples",
+              "cost": 1.2
+            }
+          ],
+          "steps": [
+            "Crustar o copo On the Rocks com o sal vermelho e adicionar gelo",
+            "Adicionar os ingredientes na parte pequena da coqueteleira",
+            "Colocar uma pá de gelo na parte grande da coqueteleira e bater",
+            "Efetuar coagem simples para o copo On the Rocks"
+          ],
+          "garnish": "N/A",
+          "glassware": "On The Rocks",
+          "confectionCost": 11.95,
+          "sellPrice": 45,
+          "costPercentage": 26.5
+        }
+      ]
+    },
+    {
+      "name": "Happy Hour",
+      "image": "happy-hour.webp",
+      "drinksList": [
+        {
+          "name": "Negroni",
+          "image": "negroni.webp",
+          "ingredients": [
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Gin",
+              "cost": 3.8
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Campari",
+              "cost": 1.2
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Vermouth Rosso",
+              "cost": 0.78
+            }
+          ],
+          "steps": [
+            "Adicionar ingredientes e gelo no mixing glass ",
+  
+            "Mexer por 20 segundos ",
+  
+            "Coar com strainer para o copo On the Rocks com gelo",
+  
+            " Finalizar com zest da casca da laranja"
+          ],
+          "garnish": "Zest da Casca de Laranja",
+          "glassware": "On The Rocks",
+          "confectionCost": 5.78,
+          "sellPrice": 45,
+          "costPercentage": 12.84
+        },
+        {
+          "name": "Old Fashioned",
+          "image": "old-fashioned.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Bourbon",
+              "cost": 5.68
+            },
+            {
+              "amount": 3,
+              "measureUnit": "dashes",
+              "ingredient": "Angostura",
+              "cost": 0.6
+            },
+            {
+              "amount": 10,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 1.2
+            }
+          ],
+          "steps": [
+            "Adicionar açúcar e angostura e bourbon ao mixing glass",
+            "Adicionar gelo e mexer por 30 segundos",
+            "Coagem simples para um copo On the Rocks com gelo"
+          ],
+          "garnish": "Zest de Casca de Laranja",
+          "glassware": "On The Rocks",
+          "confectionCost": 7.48,
+          "sellPrice": 45,
+          "costPercentage": 16.62
+        },
+        {
+          "name": "Moscow Mule",
+          "image": "moscow-mule.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Vodka",
+              "cost": 2.3
+            },
+            {
+              "amount": 10,
+              "measureUnit": "ml",
+              "ingredient": "Espuma de Gengibre",
+              "cost": 0.6
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 1.2
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            }
+          ],
+          "steps": [
+            "Adicionar açúcar e angostura e bourbon ao mixing glass",
+            "Adicionar gelo e mexer por 30 segundos",
+            "Coagem simples para um copo On the Rocks com gelo"
+          ],
+          "garnish": "Rodela de limão desidratado",
+          "glassware": "Caneca de Cobre",
+          "confectionCost": 4.1,
+          "sellPrice": 45,
+          "costPercentage": 9.11
+        }
+      ]
+    },
+    {
+      "name": "Agave Festival",
+      "image": "agave-festival.webp",
+      "description": "Celebration of 'Dia de los Muertos'",
+      "drinksList": [
+        {
+          "name": "Paloma",
+          "image": "paloma.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Tequila Prata",
+              "cost": 8
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope de Toranja",
+              "cost": 1.2
+            },
+            {
+              "amount": 150,
+              "measureUnit": "ml",
+              "ingredient": "Água com Gás",
+              "cost": 0.4
+            }
+          ],
+          "steps": [
+            "No copo Long drink, adicionar tequila, suco de limão e xarope de toranja",
+            " Encher o copo de gelo",
+            "Adicionar a rodela de laranja e completar com água, deixando o espaço de 1cm entre o líquido e a borda do copo",
+            "Numa coqueteleira, adicionar uma pá de gelo e triturar com o macerador",
+            " Colocar o gelo triturado por cima"
+          ],
+          "garnish": "Gelo triturado e rodela de laranja",
+          "glassware": "Long Drink",
+          "confectionCost": 9.6,
+          "sellPrice": 50,
+          "costPercentage": 18
+        },
+        {
+          "name": "Margarita",
+          "image": "margarita.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Tequila Prata",
+              "cost": 8
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Cointreau",
+              "cost": 2.75
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope simples",
+              "cost": 1.2
+            }
+          ],
+          "steps": [
+            "Crustar o copo On the Rocks com o sal vermelho e adicionar gelo",
+            "Adicionar os ingredientes na parte pequena da coqueteleira",
+            "Colocar uma pá de gelo na parte grande da coqueteleira e bater",
+            "Efetuar coagem simples para o copo On the Rocks"
+          ],
+          "garnish": "N/A",
+          "glassware": "On The Rocks",
+          "confectionCost": 11.95,
+          "sellPrice": 45,
+          "costPercentage": 26.5
+        },
+        {
+          "name": "White Mexican",
+          "image": "white-mexican.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Tequila Ouro",
+              "cost": 8
+            },
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Licor de Café",
+              "cost": 3.5
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Creme de Leite",
+              "cost": 1.4
+            }
+          ],
+          "steps": [
+            "Encha o on the rocks de gelo",
+            "Adicione o gelo, a tequila, o liquor de café e o creme de leite no mixing glass",
+            "Misture suavemente e sirva"
+          ],
+          "garnish": "N/A",
+          "glassware": "On The Rocks",
+          "confectionCost": 12.9,
+          "sellPrice": 45,
+          "costPercentage": 23.5
+        },
+        {
+          "name": "Long Island",
+          "image": "long-island.webp",
+          "ingredients": [
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Tequila prata",
+              "cost": 6
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Vodka",
+              "cost": 3.5
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Rum prata",
+              "cost": 3.5
+            },
+            {
+              "amount": 45,
+              "measureUnit": "ml",
+              "ingredient": "Triple sec",
+              "cost": 4.2
+            },
+            {
+              "amount": 15,
+              "measureUnit": "ml",
+              "ingredient": "Suco de Laranja",
+              "cost": 0.8
+            },
+            {
+              "amount": 60,
+              "measureUnit": "ml",
+              "ingredient": "Refrigerante Cola",
+              "cost": 2.4
+            }
+          ],
+          "steps": [
+            "Encha o long drink com gelo",
+            "Adicione todos os ingredientes e decore com limão ao mixing glass",
+            "Misture suavemente e sirva"
+          ],
+          "garnish": "Rodela limão siciliano",
+          "glassware": "Long Drink",
+          "confectionCost": 22.4,
+          "sellPrice": 44.8,
+          "costPercentage": 10
+        }
+      ]
+    },
+    {
+      "name": "Tropical",
+      "image": "tropical-collection.webp",
+      "description": "Tribute to 80 years of Tropicalia - Brazilian cultural movement",
+      "drinksList": [
+        {
+          "name": "Piña Colada",
+          "image": "pina-colada.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Rum Prata",
+              "cost": 1.5
+            },
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Suco de abacaxi",
+              "cost": 0.4
+            },
+            {
+              "amount": 40,
+              "measureUnit": "ml",
+              "ingredient": "Leite de coco",
+              "cost": 1.9
+            },
+            {
+              "amount": 40,
+              "measureUnit": "ml",
+              "ingredient": "Leite condensado",
+              "cost": 4.2
+            }
+          ],
+          "steps": [
+            "Colocar todos os ingredientes na coqueteleira com gelo e bater bem",
+            "Coagem simples para o copo Long drink com gelo",
+            "Finalizar com abacaxi desidratado"
+          ],
+          "garnish": "Abacaxi Desidratado",
+          "glassware": "Long Drink",
+          "confectionCost": 8.0,
+          "sellPrice": 40,
+          "costPercentage": 20
+        },
+        {
+          "name": "Caipirinha",
+          "image": "caipirinha.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Cachaça",
+              "cost": 1.6
+            },
+            {
+              "amount": 1,
+              "measureUnit": "un",
+              "ingredient": "Limão Tahiti",
+              "cost": 0
+            },
+            {
+              "amount": 15,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 1.5
+            }
+          ],
+          "steps": [
+            "Colocar o limão e o açúcar na parte pequena da coqueteleira e macerar",
+            "Adicionar a cachaça e gelo na coqueteleira e bater bem",
+            "Passar para o copo Y e finalizar com uma rodela de limão"
+          ],
+          "garnish": "Rodela de limão",
+          "glassware": "Copo Y",
+          "confectionCost": 3.1,
+          "sellPrice": 39,
+          "costPercentage": 7.94
+        },
+        {
+          "name": "Mojito",
+          "image": "mojito.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Rum Prata",
+              "cost": 4.56
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope Simples",
+              "cost": 0.2
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 120,
+              "measureUnit": "ml",
+              "ingredient": "Água com Gás",
+              "cost": 2.5
+            },
+            {
+              "amount": 12,
+              "measureUnit": "un",
+              "ingredient": "Folha de Hortelã",
+              "cost": 0
+            }
+          ],
+          "steps": [
+            "Pegar as folhas de hortelã e bater para soltar o aroma",
+            "Colocar as folhas de hortelã no copo e adicionar o xarope e o suco de limão",
+            "Adicionar gelo até encher o copo",
+            "Adicionar rum e completar com água com gás",
+            "Mexer levemente com a bailarina para subir as folhas do fundo do copo",
+            "Finalizar com ramo de hortelã"
+          ],
+          "garnish": "Ramo de Hortelã",
+          "glassware": "Long drink",
+          "confectionCost": 7.26,
+          "sellPrice": 35,
+          "costPercentage": 20.74
+        },
+        {
+          "name": "Margarita",
+          "image": "margarita.webp",
+          "ingredients": [
+            {
+              "amount": 50,
+              "measureUnit": "ml",
+              "ingredient": "Tequila Prata",
+              "cost": 8
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Sumo de Limão",
+              "cost": 0
+            },
+            {
+              "amount": 30,
+              "measureUnit": "ml",
+              "ingredient": "Cointreau",
+              "cost": 2.75
+            },
+            {
+              "amount": 20,
+              "measureUnit": "ml",
+              "ingredient": "Xarope simples",
+              "cost": 1.2
+            }
+          ],
+          "steps": [
+            "Crustar o copo On the Rocks com o sal vermelho e adicionar gelo",
+            "Adicionar os ingredientes na parte pequena da coqueteleira",
+            "Colocar uma pá de gelo na parte grande da coqueteleira e bater",
+            "Efetuar coagem simples para o copo On the Rocks"
+          ],
+          "garnish": "N/A",
+          "glassware": "On The Rocks",
+          "confectionCost": 11.95,
+          "sellPrice": 45,
+          "costPercentage": 26.5
+        }
+      ]
+    },
+    {
+      "name": "Holidays",
+      "image": "holidays.webp",
+      "drinksList": []
+    },
+    {
+      "name": "Women's Month",
+      "image": "womens-month.webp",
+      "drinksList": []
+    }
+  ]
+  

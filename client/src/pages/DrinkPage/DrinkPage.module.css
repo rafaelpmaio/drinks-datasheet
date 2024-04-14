@@ -1,0 +1,73 @@
+@import url('../../styles/_variaveis.css');
+
+.drink_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drink_datasheet {
+    width: 50%;
+    margin-right: 4em;
+}
+
+.drink_image {
+    width: 40%;
+    height: 40em;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 2em 0;
+}
+
+
+.highlight {
+    font-size: 1.2em;
+    color: var(--rosa);
+    margin: 0 1em 1.5em 1em;
+}
+
+@media only screen and (max-width: 900px) {
+    .drink_page {
+        display: block;
+    }
+
+    .drink_datasheet {
+        width: 100%;
+    }
+
+    .drink_image {
+        width: 100%;
+        height: 30em;
+    }
+
+    h3 {
+        margin: 2.5em 0 1em 0;
+    }
+
+    .highlight {
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .drink_image {
+        height: 20em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .drink_image {
+        height: 15em;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .drink_image {
+        height: 10em;
+    }
+}

@@ -1,0 +1,53 @@
+@import url('styles/_variaveis.css');
+
+.drink_photo_div {
+    position: static;
+    display: flex;
+    background: url('assets/images/drink-logo.png') no-repeat 50%;
+    background-size: 300px 300px;
+    width: 40%;
+    border: 2px dashed;
+    color: var(--cor-de-texto);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+    padding: 0;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.drink_photo_div span {
+    font-size: 2em;
+    font-weight: 700;
+    background-color: var(--azul-claro);
+    padding: 0.1em 0.5em;
+    border-radius: 20px;
+}
+
+.drink_photo_div:hover {
+    color: var(--azul-escuro);
+}
+
+.input {
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .drink_photo_div {
+        width: auto;
+        height: 40em;
+        background-size: 200px 200px;
+    }
+
+    .image {
+        object-fit: cover;
+        width: auto;
+        max-width: 100%;
+    }
+}

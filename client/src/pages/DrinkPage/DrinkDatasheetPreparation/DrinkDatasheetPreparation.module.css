@@ -1,0 +1,52 @@
+.list {
+    list-style: none;
+}
+
+.step_list_item {
+    display: flex;
+}
+
+.decoration_row {
+    display: flex;
+    align-items: baseline;
+    gap: 3em;
+}
+
+.decoration_title {
+    width: 20%;
+    margin-right: 2em;
+}
+
+@media only screen and (max-width: 900px) {
+    .list {
+        font-size: 0.9em;
+    }
+
+    .decoration_row {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .list {
+        font-size: 0.8em;
+    }
+
+    .decoration_row {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .list {
+        font-size: 0.7em;
+    }
+
+    .decoration_row {
+        font-size: 0.7em;
+    }
+
+    .step_list_item {
+        margin-bottom: 1.5em;
+    }
+}

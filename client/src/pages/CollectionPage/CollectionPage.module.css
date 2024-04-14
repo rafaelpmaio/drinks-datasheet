@@ -1,0 +1,20 @@
+.collectionPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.link_first_drink {
+    text-align: center;
+    padding: 2em;
+}
+
+.link_first_drink p {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.link_first_drink button {
+    padding: 1em;
+}

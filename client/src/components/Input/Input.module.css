@@ -1,0 +1,39 @@
+@import url('styles/_variaveis.css');
+
+input {
+    width: 100%;
+    border-radius: 4px;
+    height: 2em;
+    border: none;
+}
+
+.label_relative {
+    display: flex;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    font-size: 0.8em;
+    color: var(--azul-escuro);
+    left: 1em;
+    bottom: 0.5em;
+}
+
+input:focus+label {
+    transition: 0.2s;
+    color: var(--rosa);
+    font-size: 0.9em;
+    font-weight: 500;
+    bottom: 2em;
+    left: -0.2em;
+}
+
+.input_has_value {
+    color: var(--rosa);
+    font-size: 0.9em;
+    font-weight: 500;
+    bottom: 2em;
+    left: -0.2em;
+}
+

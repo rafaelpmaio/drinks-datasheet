@@ -1,0 +1,98 @@
+@import url('styles/_variaveis.css');
+
+.highlight {
+    color: var(--rosa);
+    margin-left: 0.3em;
+    font-size: 1.2em;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .cost_div {
+        display: flex;
+        margin-top: 3em;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cost_results_table {
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .cost_result_line {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .input {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .cost_div {
+        margin-top: 0;
+    }
+
+    .cost_results_table {
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .cost_result_line {
+        width: 25%;
+    }
+
+    .input {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .input {
+        font-size: 0.7em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .cost_div {
+        display: block;
+        justify-content: left;
+    }
+
+    .cost_results_table {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 2em 0 1em 0;
+    }
+
+    .cost_result_line {
+        text-align: left;
+        margin-right: 0.5em;
+    }
+
+    .input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cost_results_table {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .cost_result_line {
+        font-size: 0.8em;
+    }
+
+}
