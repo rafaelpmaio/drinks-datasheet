@@ -16,6 +16,8 @@ export default function DrinkSetupPage() {
   const { selectedCollection } = useContext(CollectionsContext);
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+
+    event.preventDefault();
     
     // MÉTODO PARA NAVEGAR PARA A COLEÇÃO ATUALIZADA, PRECISA IMPLEMENTAR COM WEBSOCKET
     // const { setHeaderData } = useContext(DynamicHeaderContext);
@@ -37,6 +39,7 @@ export default function DrinkSetupPage() {
     const drink = drinkBuilder(drinkContext);
 
     validateDrink(drinkContext);
+
     httpDatasheets
       .post("drinks", {
         collectionId: selectedCollection._id,

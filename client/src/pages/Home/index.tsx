@@ -12,7 +12,6 @@ export default function CollectionsCard() {
   const { setCollectionsList } = useContext(CollectionsContext);
 
   const { collectionsList } = useContext(CollectionsContext);
-  console.log(collectionsJson);
 
   useEffect(() => {
     Boolean(httpDatasheets)

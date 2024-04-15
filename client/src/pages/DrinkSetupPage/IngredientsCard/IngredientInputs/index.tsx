@@ -17,7 +17,6 @@ export default function IngredientInputs() {
     setCostPercentage,
   } = useContext(DrinkCreationContext);
 
-  const [id, setId] = useState("");
   const [amount, setAmount] = useState("");
   const [measureUnit, setMeasureUnit] = useState("");
   const [ingredient, setIngredient] = useState("");
@@ -32,7 +31,6 @@ export default function IngredientInputs() {
     validateInputIsFilled(amount, measureUnit, ingredient, cost);
 
     let newIngredient = ingredientBuilder(
-      id,
       amount,
       measureUnit,
       ingredient,
@@ -40,7 +38,6 @@ export default function IngredientInputs() {
     );
 
     setIngredients([...ingredients, newIngredient]);
-    setId(id + 1);
 
     resetInputs(setAmount, setMeasureUnit, setIngredient, setCost);
   };

@@ -1,7 +1,7 @@
 import { IIngredient } from "shared/interfaces/IIngredient";
+import mongoose from "mongoose";
 
 export default function ingredientBuilder(
-  _id: string,
   amountString: string,
   measureUnit: string,
   ingredient: string,
@@ -9,6 +9,9 @@ export default function ingredientBuilder(
 ) {
   const amount = Number.parseFloat(amountString);
   const cost = Number.parseFloat(costString);
+
+  const newId = new mongoose.Types.ObjectId();
+  const _id = String(newId);
 
   const newIngredient: IIngredient = {
     _id,
