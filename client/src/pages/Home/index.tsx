@@ -4,19 +4,14 @@ import SwiperDrinksCollection from "pages/Home/SwiperDrinksCollection";
 import { useContext, useEffect } from "react";
 import { CollectionsContext } from "state/CollectionContext";
 import { useGetCollections } from "state/hooks/useGetCollections";
-import collectionsJson from "assets/collections.json";
-import { httpDatasheets } from "httpApi";
 
 export default function CollectionsCard() {
   const getCollections = useGetCollections();
-  const { setCollectionsList } = useContext(CollectionsContext);
 
   const { collectionsList } = useContext(CollectionsContext);
 
   useEffect(() => {
-    Boolean(httpDatasheets)
-      ? getCollections()
-      : setCollectionsList(collectionsJson);
+    getCollections();
   }, []);
 
   return (

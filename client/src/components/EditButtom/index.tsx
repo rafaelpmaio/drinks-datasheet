@@ -9,10 +9,11 @@ import {
 } from "@mui/material";
 import { useContext, useState } from "react";
 import styles from "./EditButtom.module.css";
-import {  httpDatasheets } from "httpApi";
+import { httpDatasheets } from "httpApi";
 import { ICollection } from "shared/interfaces/ICollection";
 import CollectionInfosInputs from "components/CollectionInfosInputs";
 import { CollectionsContext } from "state/CollectionContext";
+import { ServerStatusContext } from "state/ServerSatusContext";
 
 interface EditButtonProps {
   collection: ICollection;
@@ -20,7 +21,9 @@ interface EditButtonProps {
 
 export default function EditButton({ collection }: EditButtonProps) {
   const [open, openChange] = useState(false);
-  const {name, description, image } = useContext(CollectionsContext)
+  const { name, description, image, collectionsList, setCollectionsList } =
+    useContext(CollectionsContext);
+  const { isOnline } = useContext(ServerStatusContext);
 
   const handleOpenPopup = () => {
     openChange(true);
@@ -28,7 +31,25 @@ export default function EditButton({ collection }: EditButtonProps) {
   const handleClosePopup = () => {
     openChange(false);
   };
-  const handleSubmit = () => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    
+    if (!isOnline) {
+      event.preventDefault();
+      const updatedCollection = collectionsList.map((col) => {
+        if (col._id === collection._id) {
+          return {
+            ...col,
+            name,
+            description,
+            image: image ? image : col.image,
+          };
+        }
+        return col;
+      });
+      setCollectionsList(updatedCollection);
+      return;
+    }
+
     httpDatasheets.put(`collections/${collection._id}`, {
       name: name,
       description: description,

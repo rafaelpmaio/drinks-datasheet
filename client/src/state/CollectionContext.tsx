@@ -26,7 +26,7 @@ const defaultCollection: ICollection = {
 const CollectionsContext = React.createContext({} as CollectionContextProps);
 
 const CollectionsContextProvider = ({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) => {

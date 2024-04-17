@@ -17,8 +17,6 @@ export default function DrinkSetupPage() {
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
-    event.preventDefault();
-    
     // MÉTODO PARA NAVEGAR PARA A COLEÇÃO ATUALIZADA, PRECISA IMPLEMENTAR COM WEBSOCKET
     // const { setHeaderData } = useContext(DynamicHeaderContext);
     // const navigate = useNavigate();

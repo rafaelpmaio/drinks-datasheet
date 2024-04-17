@@ -12,9 +12,11 @@ import {
   Button,
 } from "@mui/material/";
 import CollectionInfosInputs from "components/CollectionInfosInputs";
+import { ServerStatusContext } from "state/ServerSatusContext";
 
 export default function NewCollectionDiv() {
   const collectionsContext = useContext(CollectionsContext);
+  const { isOnline } = useContext(ServerStatusContext);
 
   const [open, openChange] = useState(false);
 
@@ -27,6 +29,15 @@ export default function NewCollectionDiv() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     const collection = collectionBuilder(collectionsContext, []);
+
+    if (!isOnline) {
+      event.preventDefault();
+      collectionsContext.setCollectionsList([
+        ...collectionsContext.collectionsList,
+        collection,
+      ]);
+      return;
+    }
 
     httpDatasheets.post("collections", collection).then(() => {
       alert("collection created");
