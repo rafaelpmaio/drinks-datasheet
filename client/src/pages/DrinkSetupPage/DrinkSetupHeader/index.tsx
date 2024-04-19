@@ -1,5 +1,5 @@
-import styles from './DrinkHeader.module.css';
-import pageStyle from 'pages/DrinkSetupPage/DrinkSetupPage.module.css'
+import styles from './DrinkHeader.module.scss';
+import pageStyle from 'pages/DrinkSetupPage/DrinkSetupPage.module.scss'
 import CostDisplay from "pages/DrinkSetupPage/DrinkSetupHeader/CostDisplay";
 import DrinkName from "pages/DrinkSetupPage/DrinkSetupHeader/DrinkName";
 import CollectionDatalist from "./CollectionDatalist";

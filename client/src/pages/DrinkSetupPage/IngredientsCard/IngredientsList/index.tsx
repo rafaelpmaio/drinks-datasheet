@@ -1,4 +1,4 @@
-import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.css";
+import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.scss";
 import IngredientListItem from "pages/DrinkSetupPage/IngredientsCard/IngredientsList/IngredientListItem";
 import { useContext } from "react";
 import { DrinkCreationContext } from "state/DrinkCreationContext";

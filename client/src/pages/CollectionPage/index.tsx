@@ -1,6 +1,6 @@
 import DrinkDisplay from "pages/CollectionPage/DrinkDisplay";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.css";
-import styles from "./CollectionPage.module.css";
+import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
+import styles from "./CollectionPage.module.scss";
 import { Link, useParams } from "react-router-dom";
 import { useContext } from "react";
 import { CollectionsContext } from "state/CollectionContext";

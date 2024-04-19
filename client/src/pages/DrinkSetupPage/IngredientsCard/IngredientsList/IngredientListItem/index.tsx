@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { IIngredient } from "shared/interfaces/IIngredient";
-import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.css";
+import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.scss";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 import Button from "components/Button";
 import handleDeleteById from "shared/utils/handleDeleteById";

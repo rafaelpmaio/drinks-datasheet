@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./styles/index.scss";
 import DrinkSetupPage from "./pages/DrinkSetupPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavMenu from "./components/NavMenu";

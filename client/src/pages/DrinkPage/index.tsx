@@ -1,5 +1,5 @@
-import styles from "./DrinkPage.module.css";
-import pageStyles from "../DrinkSetupPage/DrinkSetupPage.module.css";
+import styles from "./DrinkPage.module.scss";
+import pageStyles from "../DrinkSetupPage/DrinkSetupPage.module.scss";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CollectionsContext } from "state/CollectionContext";

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import styles from "./StepsList.module.css";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.css";
+import styles from "./StepsList.module.scss";
+import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
 import Input from "components/Input";
 import Button from "components/Button";
 import { DrinkCreationContext } from "state/DrinkCreationContext";

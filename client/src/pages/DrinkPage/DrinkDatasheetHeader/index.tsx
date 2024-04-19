@@ -1,5 +1,5 @@
-import styles from "./DrinkDatasheetHeader.module.css";
-import pageStyles from "pages/DrinkPage/DrinkPage.module.css";
+import styles from "./DrinkDatasheetHeader.module.scss";
+import pageStyles from "pages/DrinkPage/DrinkPage.module.scss";
 import { IDrink } from "shared/interfaces/IDrink";
 
 export default function DrinkDatasheetHeader({

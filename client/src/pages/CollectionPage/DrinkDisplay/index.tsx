@@ -1,5 +1,5 @@
-import styles from "./DrinkDisplay.module.css";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.css";
+import styles from "./DrinkDisplay.module.scss";
+import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
 import React from "react";
 import { Link } from "react-router-dom";
 import { IDrink } from "shared/interfaces/IDrink";

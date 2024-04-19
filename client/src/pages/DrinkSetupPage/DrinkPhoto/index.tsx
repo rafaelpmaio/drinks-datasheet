@@ -1,5 +1,5 @@
-import styles from './DrinkPhoto.module.css'
-import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.css'
+import styles from './DrinkPhoto.module.scss'
+import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.scss'
 import InputFile from 'components/InputFile';
 import { useContext } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';

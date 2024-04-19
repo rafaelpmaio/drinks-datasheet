@@ -1,4 +1,4 @@
-import styles from 'pages/DrinkSetupPage/PreparationCard/Preparation.module.css';
+import styles from 'pages/DrinkSetupPage/PreparationCard/Preparation.module.scss';
 import { useContext, useEffect, useState } from 'react';
 import Input from 'components/Input';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';

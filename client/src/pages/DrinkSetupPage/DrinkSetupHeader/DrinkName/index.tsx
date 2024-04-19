@@ -1,4 +1,4 @@
-import styles from './DrinkName.module.css'
+import styles from './DrinkName.module.scss'
 import { useContext, useEffect, useState } from 'react';
 import Input from 'components/Input';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';

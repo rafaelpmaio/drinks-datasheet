@@ -1,5 +1,5 @@
-import styles from "./DrinkDatasheetPreparation.module.css";
-import pageStyle from "pages/DrinkPage/DrinkPage.module.css";
+import styles from "./DrinkDatasheetPreparation.module.scss";
+import pageStyle from "pages/DrinkPage/DrinkPage.module.scss";
 import { IDrink } from "shared/interfaces/IDrink";
 
 export default function DrinkDatasheetPreparation({

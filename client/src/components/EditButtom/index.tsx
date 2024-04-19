@@ -8,7 +8,7 @@ import {
   DialogTitle,
 } from "@mui/material";
 import { useContext, useState } from "react";
-import styles from "./EditButtom.module.css";
+import styles from "./EditButtom.module.scss";
 import { httpDatasheets } from "httpApi";
 import { ICollection } from "shared/interfaces/ICollection";
 import CollectionInfosInputs from "components/CollectionInfosInputs";

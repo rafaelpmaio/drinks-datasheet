@@ -1,4 +1,4 @@
-import pageStyles from './DrinkSetupPage/DrinkSetupPage.module.css'
+import pageStyles from './DrinkSetupPage/DrinkSetupPage.module.scss'
 
 export default function Page404() {
     return (

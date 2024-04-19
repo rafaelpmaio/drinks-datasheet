@@ -1,4 +1,4 @@
-import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.css'
+import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.scss'
 import IngredientsList from "./IngredientsList";
 import IngredientInputs from "./IngredientInputs";
 

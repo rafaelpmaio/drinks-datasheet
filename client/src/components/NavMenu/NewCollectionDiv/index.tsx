@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import navStyles from "../NavMenu.module.css";
+import navStyles from "../NavMenu.module.scss";
 import { CollectionsContext } from "state/CollectionContext";
 import collectionBuilder from "shared/builders/collectionBuilder";
 import { httpDatasheets } from "httpApi";

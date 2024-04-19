@@ -1,9 +1,9 @@
-@import url('styles/_variaveis.css');
+@import url('styles/_variaveis.scss');
 
 .drink_photo_div {
     position: static;
     display: flex;
-    background: url('assets/images/drink-logo.png') no-repeat 50%;
+    background: url("/assets/images/drink-logo.png") no-repeat 50%;
     background-size: 300px 300px;
     width: 40%;
     border: 2px dashed;

@@ -1,4 +1,4 @@
-import styles from './Input.module.css'
+import styles from './Input.module.scss'
 
 export default function setLabelDecorationWhenInputHasValue(value: string) {
     let labelClass = '';

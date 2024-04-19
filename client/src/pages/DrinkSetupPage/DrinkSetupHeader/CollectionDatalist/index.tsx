@@ -1,4 +1,4 @@
-import styles from "./CollectionDatalist.module.css";
+import styles from "./CollectionDatalist.module.scss";
 import { useContext } from "react";
 import Select from "components/Select";
 import { CollectionsContext } from "state/CollectionContext";

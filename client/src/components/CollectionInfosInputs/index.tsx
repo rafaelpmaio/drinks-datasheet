@@ -1,7 +1,7 @@
 import InputFile from "components/InputFile";
 import { Input, InputLabel } from "@mui/material";
 import { useContext } from "react";
-import styles from "./CollectionInfosInputs.module.css";
+import styles from "./CollectionInfosInputs.module.scss";
 import { CollectionsContext } from "state/CollectionContext";
 
 export default function CollectionInfosInputs() {

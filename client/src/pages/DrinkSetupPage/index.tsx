@@ -3,7 +3,7 @@ import DrinkSetupHeader from "pages/DrinkSetupPage/DrinkSetupHeader";
 import IngredientsCard from "pages/DrinkSetupPage/IngredientsCard";
 import PreparationCard from "./PreparationCard";
 import DrinkPhoto from "pages/DrinkSetupPage/DrinkPhoto";
-import styles from "./DrinkSetupPage.module.css";
+import styles from "./DrinkSetupPage.module.scss";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 import drinkBuilder from "shared/builders/drinkBuilder";
 import validateDrink from "errors/validateDrink";

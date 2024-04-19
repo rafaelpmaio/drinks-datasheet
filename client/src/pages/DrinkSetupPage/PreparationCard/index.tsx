@@ -1,5 +1,5 @@
-import styles from './Preparation.module.css';
-import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.css'
+import styles from './Preparation.module.scss';
+import pageStyles from 'pages/DrinkSetupPage/DrinkSetupPage.module.scss'
 import Garnish from './Garnish';
 import Glassware from './Glassware';
 import StepsList from './StepsList';

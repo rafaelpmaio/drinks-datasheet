@@ -1,5 +1,5 @@
-import styles from "./Input.module.css";
-import "./Input.module.css";
+import styles from "./Input.module.scss";
+import "./Input.module.scss";
 import setLabelDecorationWhenInputHasValue from "./setLabelDecorationWhenInputHasValue";
 
 interface InputProps {

@@ -1,4 +1,4 @@
-import styles from "./NavMenu.module.css";
+import styles from "./NavMenu.module.scss";
 import MenuLink from "./MenuLink";
 import NewCollectionDiv from "components/NavMenu/NewCollectionDiv";
 

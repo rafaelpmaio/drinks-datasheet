@@ -1,5 +1,5 @@
-import styles from "./CollectionDisplay.module.css";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.css";
+import styles from "./CollectionDisplay.module.scss";
+import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import headerInfosGetterFromDiv from "components/MainHeader/DynamicHeader/headerInfosGetterFromDiv";

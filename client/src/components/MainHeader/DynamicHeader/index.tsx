@@ -1,6 +1,6 @@
 import { DynamicHeaderContext } from "state/DynamicHeaderContext";
-import styles from "./DynamicHeader.module.css";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.css";
+import styles from "./DynamicHeader.module.scss";
+import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
 import { useContext } from "react";
 import { handleImageFormat } from "shared/utils/handleImageFormat";
 
