@@ -17,7 +17,7 @@ export default function DynamicHeader() {
     <section className={`${pageStyles.card} ${styles.header}`}>
       <img
         className={`${styles.header_img} ${
-          collectionId === 0 ? styles.default_img : styles.collection_img
+          collectionId === 0 ? styles.default_img : ''
         }`}
         src={handleImageFormat(collectionImage, "collections")}
         alt={`collection ${collectionName}`}

@@ -2,67 +2,85 @@
     display: flex;
     align-items: center;
     margin-top: 1em;
-}
+    height: 150px;
 
-.collection_name {
-    margin: 0 0 0.2em 0;
 }
 
 .header_img {
     border-radius: 20px;
-    height: 8em;
-    width: 15em;
-    margin-right: 4em;
-
+    height: 130px;
+    width: 230px;
+    margin-right: 1em;
+    object-fit: cover;
 }
 
-.collection_img {
-    object-fit: cover;
+.header_infos {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: left;
+}
+
+.collection_name {
+    margin: 0 0 0.2em 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.collection_description {
+    line-break: auto;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .default_img {
     object-fit: contain;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
+
+    .header_img {
+        width: 40%;
+    }
+
+    .collection_name {
+        font-size: 40px;
+    }
+
+}
+@media only screen and (max-width: 630px) {
+
+    .header_img {
+        width: 50%;
+    }
+
+    .collection_name {
+        font-size: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 460px) {
     .header {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+        display: block;
+        height: 220px;
     }
     .header_img {
-        height: 12em;
-        width: 30em;
-        margin: 0;
-    }
-
-    .collection_name {
-        margin: 0.2em 0 0 0;
-    }
-
-    .collection_description {
-        margin: 0.8em 0 0 0 ;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .collection_name {
-        font-size: 2em;
-        margin-top: 0.5em;
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
-    .header_img {
+        margin: 0 0 1em 0;
         width: 100%;
     }
 
-    .collection_name {
-        font-size: 1.5em;
+    .header_infos {
+        margin: 0;
+        text-align: center;
     }
 
     .collection_description {
-        font-size: 0.8em;
+        display: none;
     }
 }
