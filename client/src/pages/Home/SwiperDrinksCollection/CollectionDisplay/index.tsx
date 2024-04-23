@@ -36,16 +36,16 @@ export default function CollectionDisplay({
             srcSet={handleImageFormat(image, "collections")}
           />
           <img
-            className={`${styles.collection_img} ${
-              _id === "0" ? styles.default_img : styles.selected_collection_img
-            }`}
+            className={`${styles.collection_img} ${_id === "0" ? styles.default_img : styles.selected_collection_img
+              }`}
             src={handleImageFormat(image, "collections")}
             alt={`${name}`}
           />
         </picture>
-
-        <h2 className={styles.collection_name}>{name}</h2>
-        <p>{description}</p>
+        <span className={styles.collection_infos}>
+          <h2 className={styles.collection_name}>{name}</h2>
+          <p>{description}</p>
+        </span>
       </Link>
       <EditButton
         collection={{ _id, name, description, image, drinksList: [] }}

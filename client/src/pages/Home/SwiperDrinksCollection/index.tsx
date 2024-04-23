@@ -9,29 +9,36 @@ interface SwiperDrinksCollectionProps {
   collectionsList: ICollection[]
 }
 
-export default function SwiperDrinksCollection({collectionsList}: SwiperDrinksCollectionProps) {
+export default function SwiperDrinksCollection({ collectionsList }: SwiperDrinksCollectionProps) {
   return (
     <Swiper
-      modules={[Navigation, Scrollbar, Pagination]}
       grabCursor
-      scrollbar={{ draggable: true }}
-      pagination={{ clickable: true }}
-      spaceBetween={30}
+      spaceBetween={35}
+      modules={[Navigation, Scrollbar]}
       breakpoints={{
-        1150: {
-          slidesPerView: 4,
+        1200: {
+          slidesPerView: 4.5,
         },
-        890: {
+        960: {
+          slidesPerView: 3.3,
+        },
+        830: {
           slidesPerView: 3,
         },
-        700: {
-          slidesPerView: 2,
+        600: {
+          slidesPerView: 3.3,
         },
+        420: {
+          slidesPerView: 2.3,
+        },
+        280: {
+          slidesPerView: 1.5,
+        }
       }}
     >
       {collectionsList.map(collection => (
         <SwiperSlide key={collection._id}>
-          <CollectionDisplay {...collection}/>
+          <CollectionDisplay {...collection} />
         </SwiperSlide>
       ))}
     </Swiper>
