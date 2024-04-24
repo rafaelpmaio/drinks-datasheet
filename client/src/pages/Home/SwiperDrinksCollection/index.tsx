@@ -25,11 +25,14 @@ export default function SwiperDrinksCollection({ collectionsList }: SwiperDrinks
         830: {
           slidesPerView: 3,
         },
-        600: {
+        700: {
+          slidesPerView: 2.3,
+        },
+        580: {
           slidesPerView: 3.3,
         },
-        420: {
-          slidesPerView: 2.3,
+        450: {
+          slidesPerView: 2.5,
         },
         280: {
           slidesPerView: 1.5,

@@ -1,13 +1,12 @@
 @import url('styles/_variaveis.scss');
 
-.drinkDisplay {
+.drink_display {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 15em;
-    height: 20em;
     padding: 0;
-}
+   }
 
 .drink_image {
     width: 100%;
@@ -30,26 +29,57 @@
     box-shadow: 0 0 40px var(--rosa);
 }
 
-@media only screen and (max-width: 680px) {
-    .drinkDisplay {
-        width: 20em;
+@media only screen and (max-width: 975px) {
+
+    .drink_display {
+        width: 12em;
+    }
+
+    .drink_image {
+        height: 12em;
+    }
+
+    .drink_name {
+        font-size: 1.5em;
     }
 
 }
 
-@media only screen and (max-width: 450px) {
-    .drinkDisplay {
-        width: 12em;
-        height: 12em;
-        margin: 1.5em 0 1.5em 0;
+@media only screen and (max-width: 575px) {
+    .drink_display {
+        width: 60vw;
+        flex-direction: column;
+        margin: 10px;
     }
 
     .drink_image {
         height: 8em;
+        width: 100%;
     }
-
     .drink_name {
-        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        height: 2em;
+        width: 100%;
     }
 
 }
+
+// @media only screen and (max-width: 450px) {
+//     .drinkDisplay {
+//         width: 12em;
+//         height: 12em;
+//         margin: 1.5em 0 1.5em 0;
+//     }
+
+//     .drink_image {
+//         height: 8em;
+//     }
+
+//     .drink_name {
+//         font-size: 1.2em;
+//     }
+
+// }

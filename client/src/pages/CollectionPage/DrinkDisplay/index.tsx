@@ -25,7 +25,7 @@ export default function DrinkDisplay({
   return (
     <Link to={`/drink/${collectionId}/${_id}#${drinkNameWithoutSpecialChars}`}>
       <div
-        className={`${pageStyles.card} ${styles.drinkDisplay}`}
+        className={`${pageStyles.card} ${styles.drink_display}`}
         ref={cardDisplayRef}
       >
         <img
