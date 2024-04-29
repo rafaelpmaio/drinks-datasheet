@@ -1,36 +1,22 @@
 import { BsPencilSquare } from "react-icons/bs";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-} from "@mui/material";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import styles from "./EditButtom.module.scss";
 import { httpDatasheets } from "httpApi";
 import { ICollection } from "shared/interfaces/ICollection";
 import CollectionInfosInputs from "components/CollectionInfosInputs";
 import { CollectionsContext } from "state/CollectionContext";
 import { ServerStatusContext } from "state/ServerSatusContext";
+import DialogBox from "components/DialogBox";
 
 interface EditButtonProps {
   collection: ICollection;
 }
 
 export default function EditButton({ collection }: EditButtonProps) {
-  const [open, openChange] = useState(false);
   const { name, description, image, collectionsList, setCollectionsList } =
     useContext(CollectionsContext);
   const { isOnline } = useContext(ServerStatusContext);
 
-  const handleOpenPopup = () => {
-    openChange(true);
-  };
-  const handleClosePopup = () => {
-    openChange(false);
-  };
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     
     if (!isOnline) {
@@ -58,36 +44,11 @@ export default function EditButton({ collection }: EditButtonProps) {
   };
 
   return (
-    <div>
-      <button
-        type="button"
-        onClick={handleOpenPopup}
-        className={styles.editButton}
-      >
-        <BsPencilSquare />
-      </button>
-      <Dialog open={open}>
-        <DialogTitle>Edit {collection.name} Collection</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            <CollectionInfosInputs />
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <form onSubmit={handleSubmit}>
-            <Button type="submit" color="success" variant="contained">
-              submit
-            </Button>
-            <Button
-              color="error"
-              variant="contained"
-              onClick={handleClosePopup}
-            >
-              close
-            </Button>
-          </form>
-        </DialogActions>
-      </Dialog>
-    </div>
+    <DialogBox 
+      title={`Edit ${collection.name} Collection`}
+      buttonText={<BsPencilSquare />}
+      className={styles.editButton}
+      contentText={<CollectionInfosInputs />}
+      handleSubmit={handleSubmit}/>
   );
 }

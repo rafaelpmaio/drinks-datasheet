@@ -1,5 +1,5 @@
 import DrinkDisplay from "pages/CollectionPage/DrinkDisplay";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import styles from "./CollectionPage.module.scss";
 import { Link, useParams } from "react-router-dom";
 import { useContext } from "react";
@@ -26,7 +26,7 @@ export default function CollectionPage() {
   let { drinksList, _id } = collection;
 
   return (
-    <section className={`${styles.collectionPage} ${pageStyles.card}`}>
+    <section className={`${styles.collectionPage} ${themeStyles.card}`}>
       {drinksList.length > 0 ? (
         drinksList.map((drink) => (
           <DrinkDisplay collectionId={_id} drink={drink} />

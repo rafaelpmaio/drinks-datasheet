@@ -61,7 +61,6 @@ export default function IngredientInputs() {
       >
         <Input
           id="amount"
-          className={`${styles.ingredient_input} ${styles.coluna_quantidade}`}
           labelText="Amount"
           type="number"
           value={amount}
@@ -69,21 +68,18 @@ export default function IngredientInputs() {
         />
         <Input
           id="measure"
-          className={`${styles.ingredient_input} ${styles.coluna_medida}`}
           labelText="Unit"
           value={measureUnit}
           onChange={(valor) => setMeasureUnit(valor)}
         />
         <Input
           id="ingredient"
-          className={`${styles.ingredient_input} ${styles.coluna_ingrediente}`}
           labelText="Ingredient"
           value={ingredient}
           onChange={(valor) => setIngredient(valor)}
         />
         <Input
           id="cost"
-          className={`${styles.ingredient_input} ${styles.coluna_custo}`}
           labelText="Cost"
           type="number"
           value={cost}

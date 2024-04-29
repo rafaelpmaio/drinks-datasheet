@@ -1,6 +1,6 @@
 import { DynamicHeaderContext } from "state/DynamicHeaderContext";
 import styles from "./DynamicHeader.module.scss";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import { useContext } from "react";
 import { handleImageFormat } from "shared/utils/handleImageFormat";
 
@@ -14,7 +14,7 @@ export default function DynamicHeader() {
   } = headerData;
 
   return (
-    <section className={`${pageStyles.card} ${styles.header}`}>
+    <section className={`${themeStyles.card} ${styles.header}`}>
       <img
         className={`${styles.header_img} ${
           collectionId === 0 ? styles.default_img : ''

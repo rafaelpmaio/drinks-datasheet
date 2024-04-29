@@ -1,15 +1,13 @@
-.card {
-    position: relative;
-    margin: 2em;
-    padding: 1em 2em;
-    border-radius: 20px;
-    box-shadow: 5px 5px 20px black;
+.drink_setup_page_div {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
 }
 
-.preparation_and_drink_photo_block {
-    display: flex;
-    justify-content: space-around;
-}
+// .preparation_and_drink_photo_block {
+//     display: flex;
+//     justify-content: space-around;
+// }
 
 .input_button_align {
     display: flex;

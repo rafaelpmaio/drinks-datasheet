@@ -13,13 +13,13 @@ export default function CollectionInfosInputs() {
         id="name"
         className={styles.input}
         onChange={(event) => setName(event.target.value)}
-      ></Input>
+      />
       <InputLabel>Name</InputLabel>
       <Input
         id="description"
         className={styles.input}
         onChange={(event) => setDescription(event.target.value)}
-      ></Input>
+      />
       <InputLabel>Description</InputLabel>
       <InputFile
         setImage={setImage}

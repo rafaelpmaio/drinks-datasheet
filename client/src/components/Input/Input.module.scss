@@ -1,7 +1,6 @@
 @import url('styles/_variaveis.scss');
 
 input {
-    width: 100%;
     border-radius: 4px;
     height: 2em;
     border: none;
@@ -25,7 +24,7 @@ input:focus+label {
     color: var(--rosa);
     font-size: 0.9em;
     font-weight: 500;
-    bottom: 2em;
+    bottom: 2.3em;
     left: -0.2em;
 }
 

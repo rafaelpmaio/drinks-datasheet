@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import DrinkSetupHeader from "pages/DrinkSetupPage/DrinkSetupHeader";
 import IngredientsCard from "pages/DrinkSetupPage/IngredientsCard";
 import PreparationCard from "./PreparationCard";
-import DrinkPhoto from "pages/DrinkSetupPage/DrinkPhoto";
 import styles from "./DrinkSetupPage.module.scss";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 import drinkBuilder from "shared/builders/drinkBuilder";
@@ -10,11 +9,12 @@ import validateDrink from "errors/validateDrink";
 import { CollectionsContext } from "state/CollectionContext";
 import Button from "components/Button";
 import { httpDatasheets } from "httpApi";
+import CollectionDatalist from "./DrinkSetupHeader/CollectionDatalist";
 
 export default function DrinkSetupPage() {
   const drinkContext = useContext(DrinkCreationContext);
   const { selectedCollection } = useContext(CollectionsContext);
-  
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
     // MÉTODO PARA NAVEGAR PARA A COLEÇÃO ATUALIZADA, PRECISA IMPLEMENTAR COM WEBSOCKET
@@ -50,13 +50,13 @@ export default function DrinkSetupPage() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <DrinkSetupHeader />
-      <main>
-        <IngredientsCard />
-        <div className={styles.preparation_and_drink_photo_block}>
-          <PreparationCard />
-          <DrinkPhoto />
+      <main className={styles.drink_setup_page_div}>
+        <div>
+          <CollectionDatalist />
+          <DrinkSetupHeader />
         </div>
+        <IngredientsCard />
+        <PreparationCard />
       </main>
       <Button type="submit">Save</Button>
     </form>

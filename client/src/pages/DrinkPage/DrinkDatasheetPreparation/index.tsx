@@ -1,5 +1,5 @@
 import styles from "./DrinkDatasheetPreparation.module.scss";
-import pageStyle from "pages/DrinkPage/DrinkPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import { IDrink } from "shared/interfaces/IDrink";
 
 export default function DrinkDatasheetPreparation({
@@ -13,7 +13,7 @@ export default function DrinkDatasheetPreparation({
       <ul className={styles.list}>
         {steps.map((step, index) => (
           <li className={styles.step_list_item}>
-            <b className={pageStyle.highlight}>{`Step ${index + 1}: `}</b>
+            <b className={themeStyles.highlight}>{`Step ${index + 1}: `}</b>
             {step}
           </li>
         ))}

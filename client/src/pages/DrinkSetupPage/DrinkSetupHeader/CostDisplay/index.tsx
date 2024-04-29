@@ -15,12 +15,16 @@ export default function CostDisplay() {
 
   return (
     <div className={styles.cost_div}>
-      <div className={styles.cost_results_table}>
         <p className={styles.cost_result_line}>
-          Sell Price:
-          <b className={styles.highlight}>
-            R${precoVendaInput ? sellPrice : 0}{" "}
-          </b>
+          <Input
+            type="number"
+            id="preco-venda"
+            labelText="Sell Price"
+            value={precoVendaInput}
+            onChange={setPrecoVendaInput}
+            className={styles.input}
+            required
+            />
         </p>
         <p className={styles.cost_result_line}>
           Production Cost:
@@ -30,15 +34,5 @@ export default function CostDisplay() {
           Cost Percentage: <b className={styles.highlight}>{costPercentage}%</b>
         </p>
       </div>
-      <Input
-        type="number"
-        id="preco-venda"
-        labelText="Sell Price"
-        value={precoVendaInput}
-        onChange={setPrecoVendaInput}
-        className={styles.input}
-        required
-      />
-    </div>
   );
 }

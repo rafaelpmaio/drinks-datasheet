@@ -1,4 +1,5 @@
 import styles from "./CollectionDatalist.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import { useContext } from "react";
 import Select from "components/Select";
 import { CollectionsContext } from "state/CollectionContext";
@@ -15,13 +16,12 @@ export default function CollectionDatalist() {
   };
 
   return (
-    <div className={styles.collection_datalist_div}>
+    <div className={`${styles.collection_datalist_div} ${themeStyles.card}`}>
       <img
-        className={`${styles.drink_header_image} ${
-          selectedCollection._id === null
-            ? styles.default_img
-            : styles.collection_img
-        }`}
+        className={`${styles.collection_img} ${selectedCollection._id === "0"
+          ? styles.default_img :
+          ""
+          }`}
         src={handleImageFormat(selectedCollection.image, "collections")}
         alt={`${selectedCollection.name}`}
       />

@@ -1,5 +1,5 @@
 import styles from "./DrinkPage.module.scss";
-import pageStyles from "../DrinkSetupPage/DrinkSetupPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CollectionsContext } from "state/CollectionContext";
@@ -29,7 +29,7 @@ export default function DrinkPage() {
   } 
 
   return (
-    <main className={`${pageStyles.card} ${styles.drink_page} `}>
+    <main className={`${themeStyles.card} ${styles.drink_page} `}>
       <DrinkDatasheetHeader {...drink} />
       <section className={styles.drink_datasheet}>
         <DrinkDatasheetIngredients {...drink} />

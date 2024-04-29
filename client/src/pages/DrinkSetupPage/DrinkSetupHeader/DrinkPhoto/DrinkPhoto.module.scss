@@ -1,11 +1,13 @@
 @import url('styles/_variaveis.scss');
 
 .drink_photo_div {
+    margin: 0 0 1em 0;
     position: static;
     display: flex;
     background: url("/assets/images/drink-logo.png") no-repeat 50%;
-    background-size: 300px 300px;
-    width: 40%;
+    background-size: 180px 180px;
+    width: 16em;
+    height: 15em;
     border: 2px dashed;
     color: var(--cor-de-texto);
     align-items: center;
@@ -22,8 +24,6 @@
 }
 
 .drink_photo_div span {
-    font-size: 2em;
-    font-weight: 700;
     background-color: var(--azul-claro);
     padding: 0.1em 0.5em;
     border-radius: 20px;

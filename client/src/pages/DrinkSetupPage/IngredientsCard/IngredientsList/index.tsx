@@ -8,7 +8,6 @@ export default function IngredientsList() {
 
   return (
     <>
-      <h2>Ingredients</h2>
       <h3 id="titulo-colunas" className={styles.ingredients_list}>
         <b className={styles.coluna_quantidade}>Amt</b>
         <b className={styles.coluna_medida}>Un</b>

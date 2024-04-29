@@ -6,33 +6,11 @@
     font-size: 1.2em;
 }
 
-
-@media only screen and (max-width: 1050px) {
-    .cost_div {
-        display: flex;
-        margin-top: 3em;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .cost_results_table {
-        display: flex;
-        width: 70%;
-        justify-content: space-around;
-    }
-
-    .cost_result_line {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .input {
-        width: auto;
-    }
-
+.cost_result_line {
+    margin: 0.3em 0;
 }
+
+
 
 @media only screen and (max-width: 900px) {
     .cost_div {

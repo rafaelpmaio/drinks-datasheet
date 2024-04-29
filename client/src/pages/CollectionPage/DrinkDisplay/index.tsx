@@ -1,5 +1,5 @@
 import styles from "./DrinkDisplay.module.scss";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import React from "react";
 import { Link } from "react-router-dom";
 import { IDrink } from "shared/interfaces/IDrink";
@@ -25,7 +25,7 @@ export default function DrinkDisplay({
   return (
     <Link to={`/drink/${collectionId}/${_id}#${drinkNameWithoutSpecialChars}`}>
       <div
-        className={`${pageStyles.card} ${styles.drink_display}`}
+        className={`${themeStyles.card} ${styles.drink_display}`}
         ref={cardDisplayRef}
       >
         <img

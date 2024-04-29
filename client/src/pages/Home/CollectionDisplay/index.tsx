@@ -1,5 +1,5 @@
 import styles from "./CollectionDisplay.module.scss";
-import pageStyles from "pages/DrinkSetupPage/DrinkSetupPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import headerInfosGetterFromDiv from "components/MainHeader/DynamicHeader/headerInfosGetterFromDiv";
@@ -25,7 +25,7 @@ export default function CollectionDisplay({
 
   return (
     <div
-      className={`${pageStyles.card} ${styles.collection_display}`}
+      className={`${themeStyles.card} ${styles.collection_display}`}
       ref={collectionHtmlDivElement}
       onMouseEnter={handleMouseHover}
     >

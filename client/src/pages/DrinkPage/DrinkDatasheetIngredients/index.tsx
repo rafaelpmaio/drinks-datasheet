@@ -1,12 +1,12 @@
 import styles from "./DrinkDatasheetIngredients.module.scss";
-import pageStyles from "pages/DrinkPage/DrinkPage.module.scss";
+import themeStyles from "styles/theme.module.scss";
 import { IDrink } from "shared/interfaces/IDrink";
 
 export default function DrinkDatasheetIngredients({ ingredients }: IDrink) {
   return (
     <div>
       <h3>INGREDIENTS</h3>
-      <span className={`${pageStyles.highlight} ${styles.ingredients_row}`}>
+      <span className={`${themeStyles.highlight} ${styles.ingredients_row}`}>
         <b className={styles.amount_column}>Amt</b>
         <b className={styles.measure_unit_column}>Un</b>
         <b className={styles.ingredient_column}>Ingredient</b>

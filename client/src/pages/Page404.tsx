@@ -1,8 +1,8 @@
-import pageStyles from './DrinkSetupPage/DrinkSetupPage.module.scss'
+import themeStyles from 'styles/theme.module.scss'
 
 export default function Page404() {
     return (
-        <section className={pageStyles.card}>
+        <section className={themeStyles.card}>
             <h1>404</h1>
             <h3>Sry, We couldn't find the page :(</h3>
         </section>
