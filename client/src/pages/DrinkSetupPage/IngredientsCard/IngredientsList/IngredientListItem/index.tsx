@@ -4,6 +4,7 @@ import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 import Button from "components/Button";
 import handleDeleteById from "shared/utils/handleDeleteById";
+import { MdDelete } from "react-icons/md"
 
 export default function IngredientListItem({
   _id,
@@ -16,15 +17,15 @@ export default function IngredientListItem({
   return (
     <>
       <li key={_id} className={styles.ingredients_list}>
-        <b className={styles.coluna_quantidade}>{amount.toFixed(2)}</b>
-        <b className={styles.coluna_medida}>{measureUnit}</b>
-        <b className={styles.coluna_ingrediente}>{ingredient}</b>
-        <b className={styles.coluna_custo}>{cost.toFixed(2)}</b>
+        <b className={styles.amount_column}>{amount.toFixed(2)}</b>
+        <b className={styles.measure_column}>{measureUnit}</b>
+        <b className={styles.ingredient_column}>{ingredient}</b>
+        <b className={styles.cost_column}>{cost.toFixed(2)}</b>
         <Button
           type="delete"
           onClick={() => handleDeleteById(_id, ingredients, setIngredients)}
         >
-          x
+          <MdDelete className="1x"/>
         </Button>
       </li>
     </>

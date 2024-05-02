@@ -38,6 +38,7 @@ export default function NavMenu() {
                 <MenuLink hrefPage="/new_drink"> New Drink </MenuLink>
                 <DialogBox
                     title="Create a new Collection"
+                    submit
                     className={navStyles.link}
                     contentText={<CollectionInfosInputs />}
                     buttonText="New Collection"

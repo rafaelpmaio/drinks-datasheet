@@ -16,7 +16,7 @@ export default function DrinkSetupHeader() {
 
 
     return (
-        <header className={`${themeStyle.card} ${styles.drink_setup_header}`}>
+        <div className={`${themeStyle.card} ${styles.drink_setup_header}`}>
             <DrinkPhoto />
             <Input
                 id='drink-name'
@@ -27,6 +27,6 @@ export default function DrinkSetupHeader() {
             />
             <CostDisplay />
 
-        </header>
+        </div>
     )
 };

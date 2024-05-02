@@ -1,7 +1,7 @@
 import styles from './Button.module.scss'
 
 interface ButtonProps {
-    children: string,
+    children: any,
     onClick?: (valor: any) => void, 
     type?: string
 }

@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 export default function MainHeader() {
     return (
-        <main>
+        <section>
             <DynamicHeader />
             <Outlet />
-        </main>
+        </section>
     )
 };

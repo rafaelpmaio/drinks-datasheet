@@ -1,13 +1,17 @@
 .drink_setup_page_div {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // gap: 0;
 }
 
-// .preparation_and_drink_photo_block {
-//     display: flex;
-//     justify-content: space-around;
-// }
+.left_side {
+    grid-column: 1 /2;
+    grid-row: 1/6;
+}
+
 
 .input_button_align {
     display: flex;

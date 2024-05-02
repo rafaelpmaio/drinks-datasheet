@@ -19,7 +19,7 @@ export default function CollectionsCard() {
   }, []);
 
   return (
-    <section className={`${themeStyles.card} ${styles.collections_card}`}>
+    <main className={`${themeStyles.card} ${styles.collections_card}`}>
       <Swiper
         grabCursor
         spaceBetween={35}
@@ -54,6 +54,6 @@ export default function CollectionsCard() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </main>
   );
 }

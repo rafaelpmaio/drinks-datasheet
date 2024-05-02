@@ -1,49 +1,40 @@
-import styles from "pages/DrinkSetupPage/IngredientsCard/IngredientsCard.module.scss";
-import React, { useContext, useEffect, useState } from "react";
-import Input from "components/Input";
-import Button from "components/Button";
-import ingredientBuilder from "shared/builders/ingredientBuilder";
-import resetInputs from "shared/utils/resetInputs";
+import { Input, InputLabel } from "@mui/material";
+import styles from "./IngredientInputs.module.scss";
+import React, { useContext, useEffect } from "react";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
-import validateInputIsFilled from "errors/validateInputIsFilled";
 
-export default function IngredientInputs() {
+interface IngredientInputsProps {
+  amount: string,
+  setAmount: React.Dispatch<React.SetStateAction<string>>,
+  measureUnit: string,
+  setMeasureUnit: React.Dispatch<React.SetStateAction<string>>,
+  ingredient: string,
+  setIngredient: React.Dispatch<React.SetStateAction<string>>,
+  cost: string,
+  setCost: React.Dispatch<React.SetStateAction<string>>,
+}
+
+export default function IngredientInputs({
+  amount,
+  setAmount,
+  measureUnit,
+  setMeasureUnit,
+  ingredient,
+  setIngredient,
+  cost,
+  setCost
+}: IngredientInputsProps) {
+
   const {
     ingredients,
     sellPrice,
-    setIngredients,
     confectionCost,
     setConfectionCost,
     setCostPercentage,
   } = useContext(DrinkCreationContext);
 
-  const [amount, setAmount] = useState("");
-  const [measureUnit, setMeasureUnit] = useState("");
-  const [ingredient, setIngredient] = useState("");
-  const [cost, setCost] = useState("");
-
-  const handleClick = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-
-    event.preventDefault();
-
-    validateInputIsFilled(amount, measureUnit, ingredient, cost);
-
-    let newIngredient = ingredientBuilder(
-      amount,
-      measureUnit,
-      ingredient,
-      cost
-    );
-
-    setIngredients([...ingredients, newIngredient]);
-
-    resetInputs(setAmount, setMeasureUnit, setIngredient, setCost);
-  };
 
   useEffect(() => {
-
     setConfectionCost(
       ingredients
         .map((ingredient) => ingredient.cost)
@@ -51,42 +42,41 @@ export default function IngredientInputs() {
     );
 
     setCostPercentage((confectionCost / sellPrice) * 100 || 0);
-  
+
   }, [ingredients, sellPrice, confectionCost]);
 
   return (
     <>
-      <div
-        className={`${styles.ingredient_inputs_list} ${styles.ingredients_list}`}
-      >
-        <Input
-          id="amount"
-          labelText="Amount"
-          type="number"
-          value={amount}
-          onChange={(valor) => setAmount(valor)}
-        />
-        <Input
-          id="measure"
-          labelText="Unit"
-          value={measureUnit}
-          onChange={(valor) => setMeasureUnit(valor)}
-        />
-        <Input
-          id="ingredient"
-          labelText="Ingredient"
-          value={ingredient}
-          onChange={(valor) => setIngredient(valor)}
-        />
-        <Input
-          id="cost"
-          labelText="Cost"
-          type="number"
-          value={cost}
-          onChange={(valor) => setCost(valor)}
-        />
-      </div>
-      <Button onClick={handleClick} >+</Button>
-    </>
+      <Input
+        id="amount"
+        type="number"
+        value={amount}
+        className={styles.input}
+        onChange={(e) => setAmount(e.target.value)}
+      />
+      <InputLabel>Amount</InputLabel>
+      <Input
+        id="measure"
+        value={measureUnit}
+        className={styles.input}
+        onChange={(e) => setMeasureUnit(e.target.value)}
+      />
+      <InputLabel>Unit</InputLabel>
+      <Input
+        id="ingredient"
+        value={ingredient}
+        className={styles.input}
+        onChange={(e) => setIngredient(e.target.value)}
+      />
+      <InputLabel>Ingredient Name</InputLabel>
+      <Input
+        id="cost"
+        value={cost}
+        type="number"
+        className={styles.input}
+        onChange={(e) => setCost(e.target.value)}
+      />
+      <InputLabel>Cost</InputLabel>
+    </ >
   );
 }

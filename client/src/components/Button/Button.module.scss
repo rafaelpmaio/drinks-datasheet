@@ -19,13 +19,12 @@
 
 .delete {
     position: absolute;
-    right: 0;
-    width: 20px;
+    display: flex;
+    right: -35px;
+    width: auto;
     height: 20px;
-    background-color: var(--vermelho);
+    background-color: var(--vermelho) ;
     color: var(--cor-de-texto);
-    text-align: center;
-    font-weight: 700;
 }
 
 @media only screen and (max-width: 690px) {

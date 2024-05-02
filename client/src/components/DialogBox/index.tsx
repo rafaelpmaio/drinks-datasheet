@@ -6,16 +6,20 @@ import {
     DialogTitle,
     Button,
 } from "@mui/material/";
+import { IoIosSend, IoMdCloseCircle  } from "react-icons/io"
 import { useState } from "react";
 
 interface DialogBoxProps {
     title: string,
     contentText: any,
     buttonText: any,
-    handleSubmit: (event: React.FormEvent<HTMLFormElement>) => any,
-    className: string
+    handleSubmit?: (event:any) => any,
+    onClick?:(event: any) => any,
+    className?: string,
+    submit?: boolean
+    disabled?: boolean
 }
-export default function DialogBox({ title, contentText, buttonText, handleSubmit, className }: DialogBoxProps) {
+export default function DialogBox({ title, contentText, buttonText, handleSubmit, onClick, className, submit, disabled }: DialogBoxProps) {
 
     const [open, openChange] = useState(false);
 
@@ -25,6 +29,7 @@ export default function DialogBox({ title, contentText, buttonText, handleSubmit
     const handleClosePopup = () => {
         openChange(false);
     };
+
 
     return (
         <div>
@@ -39,13 +44,21 @@ export default function DialogBox({ title, contentText, buttonText, handleSubmit
                     </DialogContentText>
                     <DialogActions>
                         <form onSubmit={handleSubmit}>
-                            <Button type="submit" color="success" variant="contained">
+                            <Button 
+                                type={submit ? "submit" : "submit"} 
+                                color="success" 
+                                variant="contained"
+                                disabled={disabled}
+                                endIcon={<IoIosSend />}
+                                onClick={onClick}
+                                >
                                 submit
                             </Button>
                             <Button
                                 color="error"
                                 variant="contained"
                                 onClick={handleClosePopup}
+                                endIcon={<IoMdCloseCircle />}
                             >
                                 close
                             </Button>

@@ -1,53 +1,52 @@
 .ingredients_card {
-    width: 30%;
+    grid-column: 2 / 6;
+    grid-row: 1/4;
+    // width: 70%;
+    // height: 50vh;
+    // padding-right: 3em;
 }
 
 
 .ingredients_list {
     display: flex;
-    position: relative;
     justify-content: space-between;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1em;
 }
 
-.coluna_quantidade {
+.amount_column {
     width: 15%;
 }
 
-.coluna_medida {
+.measure_column {
+    width: 15%;
+}
+
+.ingredient_column {
+    width: 60%;
+}
+
+.cost_column {
     width: 10%;
 }
 
-.coluna_ingrediente {
-    width: 50%;
-}
 
-.coluna_custo {
-    width: 10%;
-}
-
-.ingredient_inputs_list {
-    display: flex;
-    flex-direction: column;
-    gap:1em;
-    border: solid black;
-}
 
 
 @media only screen and (max-width: 700px) {
 
-    .coluna_quantidade {
+    .amount_column {
         width: 17%;
     }
 
-    .coluna_medida {
+    .measure_column {
         width: 12%;
     }
 
-    .coluna_ingrediente {
+    .ingredient_column {
         width: 45%;
     }
-    .coluna_custo {
+    .cost_column {
         width: 10%;
     }
 
@@ -56,18 +55,18 @@
 
 @media only screen and (max-width: 500px) {
 
-    .coluna_quantidade {
+    .amount_column {
         width: 16%;
     }
 
-    .coluna_medida {
+    .measure_column {
         width: 12%;
     }
 
-    .coluna_ingrediente {
+    .ingredient_column {
         width: 57%;
     }
-    .coluna_custo {
+    .cost_column {
         width: 15%;
     }
 

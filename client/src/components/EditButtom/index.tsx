@@ -46,6 +46,7 @@ export default function EditButton({ collection }: EditButtonProps) {
   return (
     <DialogBox 
       title={`Edit ${collection.name} Collection`}
+      submit
       buttonText={<BsPencilSquare />}
       className={styles.editButton}
       contentText={<CollectionInfosInputs />}

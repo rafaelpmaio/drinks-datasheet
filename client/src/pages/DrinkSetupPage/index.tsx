@@ -51,7 +51,7 @@ export default function DrinkSetupPage() {
   return (
     <form onSubmit={handleSubmit}>
       <main className={styles.drink_setup_page_div}>
-        <div>
+        <div className={styles.left_side}>
           <CollectionDatalist />
           <DrinkSetupHeader />
         </div>

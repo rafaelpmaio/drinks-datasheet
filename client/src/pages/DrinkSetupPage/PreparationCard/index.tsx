@@ -8,7 +8,7 @@ import StepsList from './StepsList';
 export default function PreparationCard() {
 
     return (
-        <section className={`${styles.preparation} ${themeStyles.card}`} >
+        <section className={`${styles.preparation_card} ${themeStyles.card}`} >
             <h2>Preparation Methods</h2>
             <StepsList />
             <Garnish />

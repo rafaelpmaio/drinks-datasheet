@@ -8,11 +8,11 @@ export default function IngredientsList() {
 
   return (
     <>
-      <h3 id="titulo-colunas" className={styles.ingredients_list}>
-        <b className={styles.coluna_quantidade}>Amt</b>
-        <b className={styles.coluna_medida}>Un</b>
-        <b className={styles.coluna_ingrediente}>Ingredient</b>
-        <b className={styles.coluna_custo}>Cost</b>
+      <h3 className={styles.ingredients_list}>
+        <b className={styles.amount_column}>amount</b>
+        <b className={styles.measure_column}>unit</b>
+        <b className={styles.ingredient_column}>ingredient</b>
+        <b className={styles.cost_column}>cost</b>
       </h3>
       <ul>
         {ingredients.map((ingredient) => (
