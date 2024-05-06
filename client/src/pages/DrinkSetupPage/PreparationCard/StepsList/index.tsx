@@ -22,7 +22,6 @@ export default function StepsList() {
 
   return (
     <>
-      <h3>Describe the steps</h3>
       <ul>
         {steps.map((step, index) => (
           <li key={index} className={styles.steps_list}>
@@ -43,7 +42,7 @@ export default function StepsList() {
       <span className={pageStyles.input_button_align}>
         <Input
           id="step"
-          labelText="Next Step"
+          labelText="Describe the step"
           value={stepInput}
           onChange={setStepInput}
           className={styles.input}

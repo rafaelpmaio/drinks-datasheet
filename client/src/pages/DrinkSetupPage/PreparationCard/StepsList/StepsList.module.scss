@@ -3,13 +3,13 @@
 .steps_list {
     position: relative;
     list-style: none;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .step_prefix {
     color: var(--rosa);
     font-weight: 500;
-    text-transform: uppercase;
+    margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 700px) {
