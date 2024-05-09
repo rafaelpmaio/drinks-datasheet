@@ -1,5 +1,5 @@
 # Drinks Datasheet 🍹
-> Aplicativo WEB que auxilia na criação, precificação e organização de drinks em coleções.
+> Aplicativo WEB que auxilia na criação, precificação e organização de drinks em coleções. <br>
 > _WebApp that helps you to create, price and organize your drinks into collections._
 <br>
 
