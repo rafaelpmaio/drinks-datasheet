@@ -7,17 +7,15 @@
 <details>
 <summary> pt-BR </summary>
  
-## Objetivo 🎯 
+## 🎯 Objetivo  
 
 Facilitar o controle de custo dos gestores através do acompanhamento no custo na produção dos drinks, ajudando em sua precificação. O app também auxilia na padronização da produção drinks o que reforça um maior senso de unidade dentro da equipe.
 
-
-## Descrição 📝 
+## 📝 Descrição  
 
 Aplicação Monorepo criada com NodeJS para a construção do servidor REST API que executa comandos CRUD e React para elaboração da interface gráfica para o usuário. 
-
  
-## Tecnologias Utilizadas ⚙️ 
+## ⚙️ Tecnologias Utilizadas  
 
 NodeJS | React | Typescript | Express | Mongoose 
 
@@ -27,23 +25,21 @@ NodeJS | React | Typescript | Express | Mongoose
 <details>
 <summary> en-US </summary>
 
-## Goal 🎯 
+## 🎯 Goal  
 
 Help managers with cost control of drinks through monitoring their production cost, making its pricing more accurate. The app also assists with the standardization of the production wich increase the sense of unit within the team.
-
  
-## Description 📝 
+## 📝 Description  
 
 Monorepo App created with NodeJS for the REST API server construction wich executes CRUD commands and React for the elaboration of the graphic interface for users. 
 
-
-## Tools Used ⚙️ 
+## ⚙️ Tools Used  
 
 NodeJS | React | Typescript | Express | Mongoose 
 
 </details><br>
 
-## Test Drive 🚗
+## 🚗 Test Drive 
 <a href="https://drinks-datasheet-client.vercel.app/">
 
  ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) <br>
@@ -53,7 +49,7 @@ NodeJS | React | Typescript | Express | Mongoose
 *O servidor API só está disponível em localhost, os drinks criados não serão persistidos*<br>
 *The API server is available only at localhost, drinks created won't persist*
 
-## Contato / Contact 📞
+## 📞 Contato / Contact 
 
 <a href="https://www.linkedin.com/in/rafael-de-paiva-maio/">
 
