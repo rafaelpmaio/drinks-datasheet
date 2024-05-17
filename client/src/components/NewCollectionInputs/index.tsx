@@ -4,7 +4,7 @@ import { useContext } from "react";
 import styles from "./CollectionInfosInputs.module.scss";
 import { CollectionsContext } from "state/CollectionContext";
 
-export default function CollectionInfosInputs() {
+export default function NewCollectionInputs() {
   const { setName, setDescription, setImage } = useContext(CollectionsContext);
 
   return (

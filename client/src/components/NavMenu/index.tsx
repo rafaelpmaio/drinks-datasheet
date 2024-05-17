@@ -2,7 +2,7 @@ import styles from "./NavMenu.module.scss";
 import MenuLink from "./MenuLink";
 import navStyles from "./NavMenu.module.scss";
 import DialogBox from "components/DialogBox";
-import CollectionInfosInputs from "components/CollectionInfosInputs";
+import NewCollectionInputs from "components/NewCollectionInputs";
 import collectionBuilder from "shared/builders/collectionBuilder";
 import { useContext } from "react";
 import { CollectionsContext } from "state/CollectionContext";
@@ -40,7 +40,7 @@ export default function NavMenu() {
                     title="Create a new Collection"
                     submit
                     className={navStyles.link}
-                    contentText={<CollectionInfosInputs />}
+                    contentText={<NewCollectionInputs />}
                     buttonText="New Collection"
                     handleSubmit={handleSubmit}
                 />

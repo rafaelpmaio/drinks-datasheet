@@ -9,7 +9,7 @@ import validateDrink from "errors/validateDrink";
 import { CollectionsContext } from "state/CollectionContext";
 import Button from "components/Button";
 import { httpDatasheets } from "httpApi";
-import CollectionDatalist from "./DrinkSetupHeader/CollectionDatalist";
+import CollectionDatalist from "./CollectionDatalist";
 
 export default function DrinkSetupPage() {
   const drinkContext = useContext(DrinkCreationContext);
@@ -58,7 +58,7 @@ export default function DrinkSetupPage() {
         <IngredientsCard />
         <PreparationCard />
       </main>
-      <Button type="submit">Save</Button>
+      <Button type="submit">Create</Button>
     </form>
   );
 }

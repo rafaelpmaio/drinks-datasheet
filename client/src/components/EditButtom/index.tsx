@@ -3,7 +3,7 @@ import { useContext } from "react";
 import styles from "./EditButtom.module.scss";
 import { httpDatasheets } from "httpApi";
 import { ICollection } from "shared/interfaces/ICollection";
-import CollectionInfosInputs from "components/CollectionInfosInputs";
+import NewCollectionInputs from "components/NewCollectionInputs";
 import { CollectionsContext } from "state/CollectionContext";
 import { ServerStatusContext } from "state/ServerSatusContext";
 import DialogBox from "components/DialogBox";
@@ -49,7 +49,7 @@ export default function EditButton({ collection }: EditButtonProps) {
       submit
       buttonText={<BsPencilSquare />}
       className={styles.editButton}
-      contentText={<CollectionInfosInputs />}
+      contentText={<NewCollectionInputs />}
       handleSubmit={handleSubmit}/>
   );
 }

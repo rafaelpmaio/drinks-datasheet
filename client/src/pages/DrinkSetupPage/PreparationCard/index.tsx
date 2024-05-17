@@ -1,44 +1,36 @@
 import styles from './Preparation.module.scss';
 import themeStyles from 'styles/theme.module.scss'
-import StepsList from './StepsList';
-import Input from 'components/Input';
 import { useContext, useEffect, useState } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
+import Button from 'components/Button';
+import PreparationInputs from 'components/PreparationInputs';
 
 
 export default function PreparationCard() {
 
-    const [glasswareInput, setGlasswareInput] = useState('');
-    const [garnishInput, setGarnishInput] = useState('');
-
-    const { setGlassware, setGarnish } = useContext(DrinkCreationContext);
-
-    useEffect(() => {
-        setGarnish(garnishInput);
-        setGlassware(glasswareInput);
-    })
-
+    const { steps } = useContext(DrinkCreationContext);
 
     return (
         <section className={`${styles.preparation_card} ${themeStyles.card}`} >
-            <h2>Preparation</h2>
-            <StepsList />
-            <Input
-                id='garnish'
-                labelText='Wich garnish will be used?'
-                value={garnishInput}
-                onChange={setGarnishInput}
-                required
-                className={styles.input}
-            />
-            <Input
-                id='glassware'
-                labelText='Wich glassware will be used?'
-                value={glasswareInput}
-                onChange={setGlasswareInput}
-                required
-                className={styles.input}
-            />
+            <h2 className={styles.header}>Preparation</h2>
+            <PreparationInputs />
+            <ul className={styles.list}>
+                {steps.map((step, index) => (
+                    <li key={index} className={styles.steps_list}>
+                        <b className={styles.step_prefix}>{`Step ${index + 1}:  `}</b>
+                        {step}
+                        <Button
+                            type="delete"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                steps.splice(index, 1);
+                            }}
+                        >
+                            x
+                        </Button>
+                    </li>
+                ))}
+            </ul>
         </section>
     )
 };
