@@ -4,37 +4,33 @@
     grid-area: preparation;
     display: grid;
     grid-template-areas: 
-    "header header"
+    "title subtitle"
     "inputs list"
     ;
     grid-template-columns: auto 1fr;
     column-gap: 2em;
 }
 
-.header {
-    grid-area: header;
+.title {
+    grid-area: title;
+    margin-bottom: 1.5em;
+}
+
+.subtitle {
+    grid-area: subtitle;
 }
 
 .list {
     grid-area: list;
     height: 200px;
-    // text-wrap: nowrap;
+    background-color: white;
+    color: var(--azul-escuro);
     overflow-x: hidden;
     overflow-y: scroll;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .list li {
     margin-bottom: 10px;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-                    
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
-                    
-::-webkit-scrollbar-thumb {
-    background-color: white;
 }
