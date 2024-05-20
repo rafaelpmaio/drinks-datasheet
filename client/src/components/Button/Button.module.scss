@@ -1,6 +1,6 @@
 @import url('styles/_variaveis.scss');
 
-.default_button {
+.default{
     background-color: var(--rosa);
     padding: 0.2em 0.5em;
     color: var(--azul-escuro);
@@ -17,12 +17,10 @@
 }
 
 .delete {
-    position: absolute;
     display: flex;
-    right: 30px;
-    height: 20px;
-    background-color:none ;
-    color: var(--cor-de-texto);
+    align-items: center;
+    margin: auto;
+    background-color: var(--vermelho);
 }
 
 @media only screen and (max-width: 690px) {

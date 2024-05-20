@@ -1,14 +1,15 @@
-import styles from './Preparation.module.scss';
+import styles from './PreparationCard.module.scss';
 import themeStyles from 'styles/theme.module.scss'
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
 import Button from 'components/Button';
 import PreparationInputs from 'components/PreparationInputs';
+import { MdDelete } from 'react-icons/md';
 
 
 export default function PreparationCard() {
 
-    const { steps } = useContext(DrinkCreationContext);
+    const { steps, setSteps } = useContext(DrinkCreationContext);
 
     return (
         <section className={`${styles.preparation_card} ${themeStyles.card}`} >
@@ -18,16 +19,20 @@ export default function PreparationCard() {
             <ul className={styles.list}>
                 {steps.map((step, index) => (
                     <li key={index} className={styles.steps_list}>
-                        <b className={styles.step_prefix}>{`Step ${index + 1}:  `}</b>
-                        {step}
+                        <p className={styles.step}>
+                            <b className={styles.step_prefix}>{`Step ${index + 1}:  `}</b>
+                            {step}
+                        </p>
                         <Button
                             type="delete"
+                            className={styles.deleteBtn}
                             onClick={(e) => {
                                 e.preventDefault();
-                                steps.splice(index, 1);
+                                const updatedList = steps.toSpliced(index, 1);
+                                setSteps(updatedList)
                             }}
                         >
-                            x
+                            <MdDelete className="1x" />
                         </Button>
                     </li>
                 ))}

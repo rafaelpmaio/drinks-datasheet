@@ -59,7 +59,6 @@ export default function IngredientsCard() {
                     setMeasureUnit={setMeasureUnit}
                 />}
             />
-
         </section>
     )
 };

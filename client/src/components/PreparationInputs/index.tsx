@@ -33,6 +33,14 @@ export default function PreparationInputs() {
     return (
         <div className={styles.inputs}>
             <Input
+                id="step"
+                labelText="Describe the next step"
+                value={stepInput}
+                onChange={setStepInput}
+                maxLenght={100}
+            />
+            <Button onClick={handleClick}>Save Step</Button>
+            <Input
                 id='garnish'
                 labelText='Wich garnish will be used?'
                 value={garnishInput}
@@ -46,14 +54,6 @@ export default function PreparationInputs() {
                 onChange={setGlasswareInput}
                 required
             />
-            <Input
-                id="step"
-                labelText="Describe the step"
-                value={stepInput}
-                onChange={setStepInput}
-                maxLenght={100}
-            />
-            <Button onClick={handleClick}>Send Step</Button>
         </div>
     )
 }

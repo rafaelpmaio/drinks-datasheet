@@ -34,7 +34,7 @@ export default function DialogBox({ title, contentText, buttonText, handleSubmit
 
     return (
         <div>
-            <span onClick={handleOpenPopup} className={className ? className : btnStyle.default_button}>
+            <span onClick={handleOpenPopup} className={className ? className : btnStyle.default}>
                 {buttonText}
             </span>
             <Dialog open={open}>
