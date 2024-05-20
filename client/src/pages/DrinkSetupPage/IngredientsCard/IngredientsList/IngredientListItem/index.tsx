@@ -23,6 +23,7 @@ export default function IngredientListItem({
         <b className={styles.cost_column}>{cost.toFixed(2)}</b>
         <Button
           type="delete"
+          className={styles.deleteBtn}
           onClick={() => handleDeleteById(_id, ingredients, setIngredients)}
         >
           <MdDelete className="1x"/>

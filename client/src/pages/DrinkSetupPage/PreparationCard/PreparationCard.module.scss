@@ -3,9 +3,9 @@
 .preparation_card {
     grid-area: preparation;
     display: grid;
-    grid-template-areas: 
-    "title subtitle"
-    "inputs list"
+    grid-template-areas:
+        "title subtitle"
+        "inputs list"
     ;
     grid-template-columns: auto 1fr;
     column-gap: 2em;
@@ -32,5 +32,20 @@
 }
 
 .list li {
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-areas:
+        "step deleteBtn";
+    align-items: center;
+    grid-template-columns: 80% auto;
+    margin-bottom: 1em;
+    
+}
+
+.step {
+    grid-area: step;
+    margin: 0;
+}
+
+.deleteBtn {
+    grid-area: deleteBtn;
 }

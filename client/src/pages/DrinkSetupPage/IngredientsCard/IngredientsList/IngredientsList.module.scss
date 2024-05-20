@@ -11,9 +11,9 @@
 .columns {
     display: grid;
     grid-template-areas: 
-    "amount unit ingredient cost"
+    "amount unit ingredient cost deleteBtn"
     ;
-    grid-template-columns: 80px 80px 1fr 80px;
+    grid-template-columns: 15% 15% 40% 15% auto;
     padding: 10px;
 }
 
@@ -37,5 +37,8 @@
     grid-area: cost;
 }
 
+.deleteBtn {
+    grid-area: deleteBtn;
+}
 
 
