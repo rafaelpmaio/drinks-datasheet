@@ -12,8 +12,9 @@ export default function PreparationCard() {
 
     return (
         <section className={`${styles.preparation_card} ${themeStyles.card}`} >
-            <h2 className={styles.header}>Preparation</h2>
+            <h2 className={styles.title}>Preparation</h2>
             <PreparationInputs />
+            <h2 className={styles.subtitle}>Steps</h2>
             <ul className={styles.list}>
                 {steps.map((step, index) => (
                     <li key={index} className={styles.steps_list}>

@@ -8,6 +8,7 @@ import {
 } from "@mui/material/";
 import { IoIosSend, IoMdCloseCircle  } from "react-icons/io"
 import { useState } from "react";
+import btnStyle from "components/Button/Button.module.scss"
 
 interface DialogBoxProps {
     title: string,
@@ -15,7 +16,7 @@ interface DialogBoxProps {
     buttonText: any,
     handleSubmit?: (event:any) => any,
     onClick?:(event: any) => any,
-    className?: string,
+    className?: any,
     submit?: boolean
     disabled?: boolean
 }
@@ -33,7 +34,7 @@ export default function DialogBox({ title, contentText, buttonText, handleSubmit
 
     return (
         <div>
-            <span onClick={handleOpenPopup} className={className}>
+            <span onClick={handleOpenPopup} className={className ? className : btnStyle.default_button}>
                 {buttonText}
             </span>
             <Dialog open={open}>

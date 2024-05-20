@@ -1,5 +1,4 @@
-import { Input, InputLabel } from "@mui/material";
-import styles from "./IngredientInputs.module.scss";
+import { Stack, TextField, InputAdornment } from "@mui/material";
 import React, { useContext, useEffect } from "react";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 
@@ -33,7 +32,6 @@ export default function IngredientInputs({
     setCostPercentage,
   } = useContext(DrinkCreationContext);
 
-
   useEffect(() => {
     setConfectionCost(
       ingredients
@@ -45,38 +43,68 @@ export default function IngredientInputs({
 
   }, [ingredients, sellPrice, confectionCost]);
 
+  const validateValue = (value: number) => {
+    const min = 0;
+    const max = 999;
+
+    if (value < min) {
+      value = min;
+    }
+    if (value > max) {
+      value = max;
+    }
+    return value;
+  }
+
   return (
-    <>
-      <Input
+    <Stack direction={"column"} spacing={2}>
+      <TextField
         id="amount"
         type="number"
+        label="Amount"
         value={amount}
-        className={styles.input}
-        onChange={(e) => setAmount(e.target.value)}
+        inputProps={{ min: 0, max: 999 }}
+        variant="standard"
+        required
+        onChange={(e) => {
+          const value = validateValue(Number(e.target.value));
+          setAmount(String(value));
+        }}
       />
-      <InputLabel>Amount</InputLabel>
-      <Input
+      <TextField
         id="measure"
+        label="Unit"
         value={measureUnit}
-        className={styles.input}
+        inputProps={{ maxLength: 5 }}
+        variant="standard"
         onChange={(e) => setMeasureUnit(e.target.value)}
+        required
       />
-      <InputLabel>Unit</InputLabel>
-      <Input
+      <TextField
         id="ingredient"
+        label="Ingredient Name"
         value={ingredient}
-        className={styles.input}
+        inputProps={{ maxLength: 30 }}
+        variant="standard"
+        required
         onChange={(e) => setIngredient(e.target.value)}
       />
-      <InputLabel>Ingredient Name</InputLabel>
-      <Input
+      <TextField
         id="cost"
-        value={cost}
         type="number"
-        className={styles.input}
-        onChange={(e) => setCost(e.target.value)}
+        label="Cost"
+        value={cost}
+        inputProps={{ min:0, max:999}}
+        variant="standard"
+        required
+        InputProps={{
+          startAdornment:<InputAdornment position="start">$</InputAdornment>
+        }}
+        onChange={(e) => {
+          const value = validateValue(Number(e.target.value));
+          setCost(String(value));
+        }}
       />
-      <InputLabel>Cost</InputLabel>
-    </ >
+    </Stack>
   );
 }

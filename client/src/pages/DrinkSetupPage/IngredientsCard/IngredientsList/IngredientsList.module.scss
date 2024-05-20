@@ -1,0 +1,41 @@
+
+.list {
+    height: 130px;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--azul-escuro);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.columns {
+    display: grid;
+    grid-template-areas: 
+    "amount unit ingredient cost"
+    ;
+    grid-template-columns: 80px 80px 1fr 80px;
+    padding: 10px;
+}
+
+.amount_column {
+    grid-area: amount;
+}
+
+.measure_column {
+    grid-area: unit;
+}
+
+.ingredient_column {
+    grid-area: ingredient;    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.cost_column {
+    grid-area: cost;
+}
+
+
+

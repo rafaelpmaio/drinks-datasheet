@@ -1,5 +1,3 @@
-import { ICollection } from "shared/interfaces/ICollection";
-
 interface Type {
   _id: string
 }
