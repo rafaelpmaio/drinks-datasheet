@@ -1,13 +1,13 @@
 @import url('styles/_variaveis.scss');
 
 .drink_photo_div {
-    margin: 0 0 1em 0;
+    margin: 0;
     position: static;
     display: flex;
     background: url("/assets/images/drink-logo.png") no-repeat 50%;
-    background-size: 180px 180px;
-    width: 16em;
-    height: 15em;
+    background-size: 80px 80px;
+    width: 20em;
+    height: 8em;
     border: 2px dashed;
     color: var(--cor-de-texto);
     align-items: center;
@@ -35,19 +35,4 @@
 
 .input {
     display: none;
-}
-
-
-@media only screen and (max-width: 900px) {
-    .drink_photo_div {
-        width: auto;
-        height: 40em;
-        background-size: 200px 200px;
-    }
-
-    .image {
-        object-fit: cover;
-        width: auto;
-        max-width: 100%;
-    }
 }

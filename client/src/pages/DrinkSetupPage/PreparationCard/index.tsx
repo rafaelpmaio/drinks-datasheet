@@ -18,7 +18,7 @@ export default function PreparationCard() {
             <h2 className={styles.subtitle}>Steps</h2>
             <ul className={styles.list}>
                 {steps.map((step, index) => (
-                    <li key={index} className={styles.steps_list}>
+                    <li key={index} className={styles.list_item}>
                         <p className={styles.step}>
                             <b className={styles.step_prefix}>{`Step ${index + 1}:  `}</b>
                             {step}

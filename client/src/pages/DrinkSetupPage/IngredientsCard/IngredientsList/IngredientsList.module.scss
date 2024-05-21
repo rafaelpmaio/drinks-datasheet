@@ -1,11 +1,12 @@
 
 .list {
-    height: 130px;
+    height: 150px;
     background-color: white;
     border-radius: 10px;
     color: var(--azul-escuro);
     overflow-x: hidden;
     overflow-y: scroll;
+    padding: 10px;
 }
 
 .columns {
@@ -14,7 +15,6 @@
     "amount unit ingredient cost deleteBtn"
     ;
     grid-template-columns: 15% 15% 40% 15% auto;
-    padding: 10px;
 }
 
 .amount_column {

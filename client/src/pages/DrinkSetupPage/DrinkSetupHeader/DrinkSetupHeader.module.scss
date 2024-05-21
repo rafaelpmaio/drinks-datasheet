@@ -1,3 +1,7 @@
 .drink_setup_header {
-  // grid-area: header;
+  grid-area: drinkPhoto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }

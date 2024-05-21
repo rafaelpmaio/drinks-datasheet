@@ -1,6 +1,5 @@
 import themeStyles from 'styles/theme.module.scss';
 import styles from './IngredientsCard.module.scss'
-import btnStyle from 'components/Button/Button.module.scss'
 import IngredientsList from "./IngredientsList";
 import IngredientInputs from "./IngredientInputs";
 import DialogBox from 'components/DialogBox';
