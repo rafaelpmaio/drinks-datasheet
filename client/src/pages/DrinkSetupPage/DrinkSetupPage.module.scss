@@ -1,11 +1,16 @@
 .drink_setup_page_div {
     display: grid;
-    grid-template-areas: 
-    "aside ingredients"
-    "aside preparation";
+    grid-template-areas:
+        "drinkPhoto ingredients"
+        "collections preparation"
+        "submitBtn preparation";
     grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
 }
 
-.left_side {
-    grid-area: aside;
+.submitBtn {
+    grid-area: submitBtn;
+    height: 20px;
+    width: auto;
+    margin: 0.5em;
 }

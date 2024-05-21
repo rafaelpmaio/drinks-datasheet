@@ -17,24 +17,22 @@ ul {
 
 h1 {
   font-family: var(--fonte-bold);
-  font-size: 2em;
   color: var(--rosa);
-  margin-right: 1em;
 }
 
 h2 {
   color: var(--rosa);
   font-size: 1em;
   font-weight: 700;
-  margin-top: 1em;
   text-transform: uppercase;
+  margin-bottom: 1.5em;
 }
 
 h3 {
   font-size: 1em;
   color: var(--roxo);
   text-transform: uppercase;
-  margin: 1.5em 0 1em 0;
+  margin-bottom: 1em;
 }
 
   @font-face {

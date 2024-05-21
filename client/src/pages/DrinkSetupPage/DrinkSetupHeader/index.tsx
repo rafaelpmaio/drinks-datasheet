@@ -8,7 +8,7 @@ import CostDisplay from './CostDisplay';
 
 export default function DrinkSetupHeader() {
 
-    const { name, setName } = useContext(DrinkCreationContext);
+    const { setName } = useContext(DrinkCreationContext);
     const [nameInput, setNameInput] = useState('');
 
     useEffect(() => setName(nameInput), [nameInput])

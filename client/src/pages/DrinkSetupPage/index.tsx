@@ -49,16 +49,14 @@ export default function DrinkSetupPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <main className={styles.drink_setup_page_div}>
-        <div className={styles.left_side}>
-          <CollectionDatalist />
-          <DrinkSetupHeader />
-        </div>
+    <main >
+      < form onSubmit={handleSubmit} className={styles.drink_setup_page_div} >
+        <DrinkSetupHeader />
+        <CollectionDatalist />
         <IngredientsCard />
         <PreparationCard />
-      </main>
-      <Button type="submit">Create</Button>
-    </form>
+        <Button className={styles.submitBtn} type="submit">Create</Button>
+      </form >
+    </main>
   );
 }

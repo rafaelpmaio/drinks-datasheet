@@ -8,12 +8,11 @@
         "inputs list"
     ;
     grid-template-columns: auto 1fr;
-    column-gap: 2em;
+    column-gap: 1em;
 }
 
 .title {
     grid-area: title;
-    margin-bottom: 1.5em;
 }
 
 .subtitle {
@@ -22,7 +21,7 @@
 
 .list {
     grid-area: list;
-    height: 200px;
+    height: 150px;
     background-color: white;
     color: var(--azul-escuro);
     overflow-x: hidden;
@@ -31,19 +30,21 @@
     padding: 10px;
 }
 
-.list li {
+.list_item {
     display: grid;
     grid-template-areas:
         "step deleteBtn";
     align-items: center;
     grid-template-columns: 80% auto;
     margin-bottom: 1em;
-    
 }
 
 .step {
     grid-area: step;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
 }
 
 .deleteBtn {

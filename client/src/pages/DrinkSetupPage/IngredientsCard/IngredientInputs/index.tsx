@@ -1,5 +1,6 @@
 import { Stack, TextField, InputAdornment } from "@mui/material";
 import React, { useContext, useEffect } from "react";
+import validateValue from "shared/utils/validateValue";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 
 interface IngredientInputsProps {
@@ -43,18 +44,7 @@ export default function IngredientInputs({
 
   }, [ingredients, sellPrice, confectionCost]);
 
-  const validateValue = (value: number) => {
-    const min = 0;
-    const max = 999;
-
-    if (value < min) {
-      value = min;
-    }
-    if (value > max) {
-      value = max;
-    }
-    return value;
-  }
+ 
 
   return (
     <Stack direction={"column"} spacing={2}>
