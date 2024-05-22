@@ -5,7 +5,7 @@ import NavMenu from "./components/NavMenu";
 import Home from "./pages/Home";
 import CollectionPage from "pages/CollectionPage";
 import MainHeader from "components/MainHeader";
-import Footer from "components/Footer";
+// import Footer from "components/Footer";
 import { DynamicHeaderContextProvider } from "state/DynamicHeaderContext";
 import { DrinkCreationContextProvider } from "state/DrinkCreationContext";
 import { CollectionsContextProvider } from "state/CollectionContext";
@@ -37,7 +37,7 @@ function App() {
           </DrinkCreationContextProvider>
         </CollectionsContextProvider>
       </ServerStatusProvider>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

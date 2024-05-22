@@ -50,3 +50,19 @@
 .deleteBtn {
     grid-area: deleteBtn;
 }
+
+@media only screen and (max-width: 1030px) {
+    .preparation_card {
+        grid-template-areas:
+            "title"
+            "inputs"
+            "subtitle"
+            "list"
+        ;
+        grid-template-columns: auto;
+    }
+
+    .subtitle {
+        margin:2em 0 1em 0;
+    }
+}

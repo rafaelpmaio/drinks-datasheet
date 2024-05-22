@@ -1,15 +1,24 @@
 @import url('styles/_variaveis.scss');
-.nav {
-    display: flex;
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
     justify-content: center;
     width: 100%;
     gap: 3em;
     padding: 0.3em;
-    background-color: var(--cor-do-texto);
+    background-color: var(--cinza-claro);
+}
+
+.nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
 }
 
 .link {
     color: var(--azul-escuro);
+
 }
 
 .link:hover {
@@ -18,4 +27,15 @@
 
 a {
     text-decoration: none;
-  }
+}
+
+.address {
+    display: flex;
+    gap: 1.5em;
+    margin: 0 0 0 1em;
+    
+
+    img {
+        height: 1.3em;
+    }
+}

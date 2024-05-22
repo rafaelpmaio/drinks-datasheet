@@ -11,6 +11,8 @@
 .submitBtn {
     grid-area: submitBtn;
     height: 20px;
-    width: auto;
     margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
