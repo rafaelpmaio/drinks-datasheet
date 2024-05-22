@@ -8,6 +8,8 @@ import validateInputIsFilled from 'errors/validateInputIsFilled';
 import ingredientBuilder from 'shared/builders/ingredientBuilder';
 import resetInputs from 'shared/utils/resetInputs';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
+import { VscNewFile } from "react-icons/vsc";
+
 
 export default function IngredientsCard() {
 
@@ -45,7 +47,7 @@ export default function IngredientsCard() {
             <IngredientsList />
             <DialogBox
                 title='add a new Ingredient'
-                buttonText="+"
+                buttonText={<VscNewFile/>}
                 onClick={onClick}
                 contentText={<IngredientInputs
                     amount={amount}

@@ -3,6 +3,7 @@ import Input from 'components/Input';
 import styles from './PreparationInputs.module.scss'
 import { useContext, useEffect, useState } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
+import { FiSend } from "react-icons/fi";
 
 
 export default function PreparationInputs() {
@@ -37,6 +38,7 @@ export default function PreparationInputs() {
                 labelText='Wich garnish will be used?'
                 value={garnishInput}
                 onChange={setGarnishInput}
+                className={styles.input}
                 required
             />
             <Input
@@ -54,7 +56,7 @@ export default function PreparationInputs() {
                     onChange={setStepInput}
                     maxLenght={100}
                 />
-                <Button onClick={handleClick}>+</Button>
+                <Button onClick={handleClick}><FiSend/></Button>
             </span>
         </div>
     )
