@@ -55,7 +55,6 @@ export default function DrinkSetupPage() {
         <CollectionDatalist />
         <IngredientsCard />
         <PreparationCard />
-        <Button className={styles.submitBtn} type="submit">Save Drink</Button>
       </form >
     </main>
   );

@@ -10,17 +10,6 @@
     display: flex;
 }
 
-.input {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    box-sizing: content-box;
-    // background-color: red;
-    min-width: none;
-    max-width: none;
-}
-
 @media only screen and (max-width: 1030px) {
     .inputs {
         flex-direction: row;
@@ -28,7 +17,11 @@
         flex-wrap: wrap;
     }
     .inputs>* {
-        flex: 1 1 200px;
+        flex: 1 1 180px;
       }
+
+    .input {
+        width: 100%;
+    }
 
 }

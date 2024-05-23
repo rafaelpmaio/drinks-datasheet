@@ -46,6 +46,7 @@ export default function PreparationInputs() {
                 labelText='Wich glassware will be used?'
                 value={glasswareInput}
                 onChange={setGlasswareInput}
+                className={styles.input}
                 required
             />
             <span className={styles.inpt_btn_align}>
@@ -54,6 +55,7 @@ export default function PreparationInputs() {
                     labelText="Describe the next step"
                     value={stepInput}
                     onChange={setStepInput}
+                    className={styles.input}
                     maxLenght={100}
                 />
                 <Button onClick={handleClick}><FiSend/></Button>

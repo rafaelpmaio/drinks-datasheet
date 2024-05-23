@@ -37,6 +37,8 @@ export default function PreparationCard() {
                     </li>
                 ))}
             </ul>
+            <Button className={styles.submitBtn} type="submit">Save Drink</Button>
+
         </section>
     )
 };

@@ -29,7 +29,7 @@ export default function Input({
   let labelClass = setLabelDecorationWhenInputHasValue(value);
 
   return (
-    <b className={`${styles.label_relative} ${className}`}>
+    <span className={`${styles.label_relative} ${className}`}>
       <input
         id={id}
         value={value}
@@ -42,6 +42,6 @@ export default function Input({
       <label className={labelClass} htmlFor={id}>
         {labelText}
       </label>
-    </b>
+    </span>
   );
 }
