@@ -36,7 +36,6 @@
         "step deleteBtn";
     align-items: center;
     grid-template-columns: 80% auto;
-    margin-bottom: 1em;
 }
 
 .step {
@@ -53,25 +52,29 @@
 
 .submitBtn {
     grid-area: submitBtn;
-    height: 90px;
+    height: 60px;
     width: 90px;
     margin: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: flex-end;
+    align-self: self-end;
+    justify-self: end;
+    margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1080px) {
     .preparation_card {
         grid-template-areas:
             "title"
             "inputs"
             "subtitle"
             "list"
+            "submitBtn"
         ;
         grid-template-columns: auto;
     }
+    
 
     .subtitle {
         margin:1em 0 1em 0;

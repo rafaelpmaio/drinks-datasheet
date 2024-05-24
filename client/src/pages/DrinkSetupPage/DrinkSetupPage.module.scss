@@ -2,18 +2,18 @@
     display: grid;
     grid-template-areas:
         "drinkPhoto ingredients"
+        "drinkPhoto preparation"
         "collections preparation";
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
 }
 
-@media only screen and (max-width: 900px) {
-    .drink_setup_page_div {
-        grid-template-areas:
-            "drinkPhoto collections"
-            "ingredients ingredients"
-            "preparation preparation";
+// @media only screen and (max-width: 900px) {
+//     .drink_setup_page_div {
+//         grid-template-areas:
+//             "drinkPhoto collections"
+//             "ingredients ingredients"
+//             "preparation preparation";
 
-            grid-template-columns: 1fr auto;
-    }
-}
+//     }
+// }

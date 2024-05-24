@@ -3,18 +3,19 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-
 }
 
 .inpt_btn_align {
     display: flex;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1080px) {
     .inputs {
         flex-direction: row;
         gap: 0.5em;
         flex-wrap: wrap;
+        align-items: flex-end;
+
     }
     .inputs>* {
         flex: 1 1 180px;
