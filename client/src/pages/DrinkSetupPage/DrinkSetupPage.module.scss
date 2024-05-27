@@ -8,12 +8,23 @@
     grid-template-rows: auto auto;
 }
 
-// @media only screen and (max-width: 900px) {
-//     .drink_setup_page_div {
-//         grid-template-areas:
-//             "drinkPhoto collections"
-//             "ingredients ingredients"
-//             "preparation preparation";
+@media only screen and (max-width: 910px) {
+    .drink_setup_page_div {
+        grid-template-areas:
+            "drinkPhoto drinkPhoto collections"
+            "ingredients ingredients ingredients"
+            "preparation preparation preparation";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
-//     }
-// }
+@media only screen and (max-width: 565px) {
+    .drink_setup_page_div {
+        grid-template-areas:
+            "drinkPhoto"
+            "collections"
+            "ingredients"
+            "preparation";
+        grid-template-columns: 1fr ;
+    }
+}

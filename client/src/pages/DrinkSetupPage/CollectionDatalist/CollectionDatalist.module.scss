@@ -20,3 +20,21 @@
   height: 2em;
   border: none;
 }
+
+@media only screen and (max-width: 910px) {
+  .collection_img {
+    height: 9em;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .collection_img {
+    height: 11em;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .collection_img {
+    height: 6em;
+  }
+}

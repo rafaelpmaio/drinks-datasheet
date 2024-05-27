@@ -5,3 +5,21 @@
   flex-direction: column;
   gap: 1.5em;
 }
+
+@media only screen and (max-width: 910px) {
+  .drink_setup_header {
+    height: 15em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .drink_setup_header {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+
+

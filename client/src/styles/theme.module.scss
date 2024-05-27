@@ -11,3 +11,9 @@
     color: var(--rosa);
     margin: 0 1em 1.5em 1em;
 }
+
+@media only screen and (max-width: 910px) {
+    .card {
+        padding: 10px;
+    }
+}

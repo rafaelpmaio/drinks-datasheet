@@ -1,32 +1,18 @@
 import styles from './DrinkSetupHeader.module.scss';
 import themeStyle from 'styles/theme.module.scss'
-import Input from 'components/Input';
-import { useContext, useEffect, useState } from 'react';
-import { DrinkCreationContext } from 'state/DrinkCreationContext';
 import DrinkPhoto from './DrinkPhoto';
 import CostDisplay from './CostDisplay';
+import Inputs from './Inputs';
+import { useState } from 'react';
 
 export default function DrinkSetupHeader() {
-
-    const { setName } = useContext(DrinkCreationContext);
-    const [nameInput, setNameInput] = useState('');
-
-    useEffect(() => setName(nameInput), [nameInput])
-
-
+    const [inputSellPrice, setInputSellPrice] = useState("");
 
     return (
         <div className={`${themeStyle.card} ${styles.drink_setup_header}`}>
             <DrinkPhoto />
-            <Input
-                id='drink-name'
-                labelText='Drink Name'
-                value={nameInput}
-                onChange={setNameInput}
-                required
-            />
-            <CostDisplay />
-
+            <Inputs inputSellPrice={inputSellPrice} setInputSellPrice={setInputSellPrice} />
+            <CostDisplay inputSellPrice={inputSellPrice} />
         </div>
     )
 };

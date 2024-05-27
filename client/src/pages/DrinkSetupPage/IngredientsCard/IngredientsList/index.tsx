@@ -9,7 +9,7 @@ export default function IngredientsList() {
   return (
     <div className={styles.ingredients_div}>
       <h3 className={styles.columns}>
-        <b className={styles.amount_column}>amount</b>
+        <b className={styles.amount_column}>amt</b>
         <b className={styles.measure_column}>unit</b>
         <b className={styles.ingredient_column}>ingredient</b>
         <b className={styles.cost_column}>cost</b>
