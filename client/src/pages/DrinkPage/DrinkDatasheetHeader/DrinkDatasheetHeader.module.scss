@@ -1,17 +1,23 @@
 .drink_header {
-    display: flex;
-    width: 100%;
-    margin-top: 2em;
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "image name cost";
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    }
+
+.image {
+    grid-area: image;
+    height: 10em;
+    border-radius: 20px;
 }
 
 .drink_name {
-    width: 60%;
-    margin-bottom: 1em;
+    grid-area: name;
     text-align: center;
 }
 
 .cost_div {
-    width: 40%;
-    margin-bottom: 1em;
-    text-align: right;
+    grid-area: cost;
 }

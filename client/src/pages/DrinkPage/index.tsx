@@ -3,12 +3,12 @@ import themeStyles from "styles/theme.module.scss";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CollectionsContext } from "state/CollectionContext";
-import { handleImageFormat } from "shared/utils/handleImageFormat";
 import DrinkDatasheetHeader from "pages/DrinkPage/DrinkDatasheetHeader";
 import DrinkDatasheetIngredients from "pages/DrinkPage/DrinkDatasheetIngredients";
 import DrinkDatasheetPreparation from "pages/DrinkPage/DrinkDatasheetPreparation";
 import getFromList from "shared/utils/getFromList";
 import { IDrink } from "shared/interfaces/IDrink";
+import DrinkDatasheetDecoration from "./DrinkDatasheetDecoration";
 
 export default function DrinkPage() {
   const { collectionsList } = useContext(CollectionsContext);
@@ -21,25 +21,21 @@ export default function DrinkPage() {
   let drink: IDrink | undefined;
 
   if (collection) {
-    drink = getFromList(drinkId , collection.drinksList);
+    drink = getFromList(drinkId, collection.drinksList);
   }
-  
+
   if (!drink) {
-      drink = collectionsList[0].drinksList[0];
-  } 
+    drink = collectionsList[0].drinksList[0];
+  }
 
   return (
-    <main className={`${themeStyles.card} ${styles.drink_page} `}>
-      <DrinkDatasheetHeader {...drink} />
-      <section className={styles.drink_datasheet}>
+    <main className={styles.drink_page}>
+      <section className={`${themeStyles.card} ${styles.drink_section} `}>
+        <DrinkDatasheetHeader {...drink} />
         <DrinkDatasheetIngredients {...drink} />
         <DrinkDatasheetPreparation {...drink} />
+        <DrinkDatasheetDecoration {...drink}/>
       </section>
-      <img
-        src={handleImageFormat(drink.image, "drinks")}
-        alt=""
-        className={styles.drink_image}
-      />
     </main>
   );
 }

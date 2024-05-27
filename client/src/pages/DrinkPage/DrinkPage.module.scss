@@ -2,20 +2,18 @@
 
 .drink_page {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
-
-.drink_datasheet {
-    width: 50%;
-    margin-right: 4em;
-}
-
-.drink_image {
-    width: 40%;
-    height: 40em;
-    align-self: center;
-    object-fit: cover;
-    border-radius: 20px;
-    margin: 2em 0;
+.drink_section {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "ingredients preparation"
+        "decoration decoration"
+    ;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    height: 550px;
+    width: 80%;
 }

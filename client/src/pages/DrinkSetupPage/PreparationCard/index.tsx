@@ -19,10 +19,10 @@ export default function PreparationCard() {
             <ul className={styles.list}>
                 {steps.map((step, index) => (
                     <li key={index} className={styles.list_item}>
-                        <p className={styles.step}>
-                            <b className={styles.step_prefix}>{`Step ${index + 1}:  `}</b>
+                        <span className={styles.step}>
+                            <b>{`Step ${index + 1}:  `}</b>
                             {step}
-                        </p>
+                        </span>
                         <Button
                             type="delete"
                             className={styles.deleteBtn}

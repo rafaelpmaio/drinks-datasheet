@@ -1,18 +1,24 @@
+@import url('styles/_variaveis.scss');
+
+.preparation_div {
+    grid-area: preparation;
+    box-sizing:content-box;
+
+}
+
 .list {
     list-style: none;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: 200px;
+    background-color: white;
+    color: var(--azul-escuro);
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.step_list_item {
+.list_item {
     display: flex;
-}
-
-.decoration_row {
-    display: flex;
-    align-items: baseline;
-    gap: 3em;
-}
-
-.decoration_title {
-    width: 20%;
-    margin-right: 2em;
+    gap: 1em;
 }

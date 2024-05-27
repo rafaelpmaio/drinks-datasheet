@@ -1,24 +1,27 @@
+.ingredients_div {
+    grid-area: ingredients;
+}
+
+.columns {
+    display: grid;
+    grid-template-areas:
+        "amount unit ingredient cost"
+    ;
+    grid-template-columns: 15% 15% 40% 15%;
+}
+
 .amount_column {
-    width: 8%;
+    grid-area: amount;
 }
 
 .measure_unit_column {
-    width: 8%;
+    grid-area: unit;
 }
 
 .ingredient_column {
-    width: 40%;
+    grid-area: ingredient;
 }
 
 .cost_column {
-    width: 9%;
+    grid-area: cost;
 }
-
-.ingredients_row {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-

@@ -1,0 +1,16 @@
+.decoration_div {
+    grid-area: decoration;
+    display: flex;
+    justify-content: space-around;
+}
+
+.decoration_row {
+    display: flex;
+    align-items: baseline;
+    gap: 3em;
+}
+
+.decoration_title {
+    width: 20%;
+    margin-right: 2em;
+}
