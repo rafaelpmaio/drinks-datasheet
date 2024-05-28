@@ -12,7 +12,7 @@ export default function DrinkDatasheetHeader({
   image
 }: IDrink) {
   return (
-    <section className={styles.drink_header}>
+    <div className={styles.drink_header}>
       <img
         src={handleImageFormat(image, "drinks")}
         alt=""
@@ -33,6 +33,6 @@ export default function DrinkDatasheetHeader({
           <strong className={themeStyles.highlight}>{costPercentage}%</strong>
         </p>
       </div>
-    </section>
+    </div>
   );
 }

@@ -2,8 +2,6 @@
 
 .preparation_div {
     grid-area: preparation;
-    box-sizing:content-box;
-
 }
 
 .list {
@@ -11,11 +9,6 @@
     overflow-x: auto;
     overflow-y: auto;
     white-space: nowrap;
-    height: 200px;
-    background-color: white;
-    color: var(--azul-escuro);
-    border-radius: 5px;
-    padding: 10px;
 }
 
 .list_item {

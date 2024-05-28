@@ -2,12 +2,16 @@
     grid-area: ingredients;
 }
 
+.list {
+    list-style: none;
+}
+
 .columns {
     display: grid;
     grid-template-areas:
         "amount unit ingredient cost"
     ;
-    grid-template-columns: 15% 15% 40% 15%;
+    grid-template-columns: 50px 50px 200px 50px;
 }
 
 .amount_column {
@@ -20,6 +24,9 @@
 
 .ingredient_column {
     grid-area: ingredient;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
 }
 
 .cost_column {
