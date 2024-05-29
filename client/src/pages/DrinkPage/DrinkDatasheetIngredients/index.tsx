@@ -11,18 +11,28 @@ export default function DrinkDatasheetIngredients({ ingredients }: IDrink) {
         <b className={styles.ingredient_column}>Ingredient</b>
         <b className={styles.cost_column}>Cost</b>
       </h3>
-      <ul className={styles.list}>
-        {ingredients.map((ingredient) => (
-          <li className={styles.columns}>
-            <span className={styles.amount_column}>{ingredient.amount}</span>
-            <span className={styles.measure_unit_column}>
-              {ingredient.measureUnit}
-            </span>
-            <span className={styles.ingredient_column}>{ingredient.ingredient}</span>
-            <span className={styles.cost_column}>{ingredient.cost}</span>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.columns}>
+        <ul className={styles.list}>
+          {ingredients.map((ingredient) => (
+            <li className={styles.amount_column}> {ingredient.amount} </li>
+          ))}
+        </ul>
+        <ul className={styles.list}>
+          {ingredients.map((ingredient) => (
+            <li className={styles.measure_unit_column}> {ingredient.measureUnit} </li>
+          ))}
+        </ul>
+        <ul className={styles.list}>
+          {ingredients.map((ingredient) => (
+            <li className={styles.ingredient_column}> {ingredient.ingredient} </li>
+          ))}
+        </ul>
+        <ul className={styles.list}>
+          {ingredients.map((ingredient) => (
+            <li className={styles.cost_column}> {ingredient.cost}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

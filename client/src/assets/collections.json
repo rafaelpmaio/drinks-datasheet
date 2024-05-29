@@ -428,6 +428,13 @@
             "cost": 8
           },
           {
+            "_id": "0",
+            "amount": 50,
+            "measureUnit": "ml",
+            "ingredient": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+            "cost": 8
+          },
+          {
             "_id": "1",
             "amount": 30,
             "measureUnit": "ml",

@@ -7,7 +7,6 @@ import { DrinkCreationContext } from "state/DrinkCreationContext";
 import drinkBuilder from "shared/builders/drinkBuilder";
 import validateDrink from "errors/validateDrink";
 import { CollectionsContext } from "state/CollectionContext";
-import Button from "components/Button";
 import { httpDatasheets } from "httpApi";
 import CollectionDatalist from "./CollectionDatalist";
 
@@ -33,7 +32,7 @@ export default function DrinkSetupPage() {
     // navigate(
     //   `/collection/${selectedCollection._id}#${collectionNameWithoutSpecialChars}`
     // , {unstable_viewTransition: true});
-
+    event.preventDefault();
     const drink = drinkBuilder(drinkContext);
 
     validateDrink(drinkContext);

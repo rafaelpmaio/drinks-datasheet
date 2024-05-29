@@ -1,5 +1,4 @@
 import styles from "./DrinkDatasheetHeader.module.scss";
-import themeStyles from "styles/theme.module.scss";
 import { IDrink } from "shared/interfaces/IDrink";
 import { handleImageFormat } from "shared/utils/handleImageFormat";
 
@@ -22,15 +21,15 @@ export default function DrinkDatasheetHeader({
       <div className={styles.cost_div}>
         <p className={styles.cost_line}>
           Sell Price:
-          <strong className={themeStyles.highlight}> R${sellPrice}</strong>
+          <strong className={styles.highlight}> R${sellPrice}</strong>
         </p>
         <p className={styles.cost_line}>
           Production Cost:
-          <strong className={themeStyles.highlight}> R${confectionCost} </strong>
+          <strong className={styles.highlight}> R${confectionCost} </strong>
         </p>
         <p className={styles.cost_line}>
           Cost Percentage:
-          <strong className={themeStyles.highlight}>{costPercentage}%</strong>
+          <strong className={styles.highlight}>{costPercentage}%</strong>
         </p>
       </div>
     </div>

@@ -9,9 +9,18 @@
     overflow-x: auto;
     overflow-y: auto;
     white-space: nowrap;
+    height: 195px;
+    margin-bottom: 0;
 }
 
 .list_item {
     display: flex;
     gap: 1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .list {
+        height: auto;
+    }
 }
