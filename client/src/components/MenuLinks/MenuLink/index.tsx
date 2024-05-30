@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import styles from "../NavMenu.module.scss";
+import styles from "../MenuLinks.module.scss";
 
 interface MenuLinkProps {
   hrefPage: string;

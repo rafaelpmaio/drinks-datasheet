@@ -3,7 +3,7 @@ import themeStyles from 'styles/theme.module.scss'
 import { useContext } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
 import Button from 'components/Button';
-import PreparationInputs from 'components/PreparationInputs';
+import PreparationInputs from 'pages/DrinkSetupPage/PreparationCard/PreparationInputs';
 import { MdDelete } from 'react-icons/md';
 
 
