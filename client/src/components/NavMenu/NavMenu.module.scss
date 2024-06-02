@@ -13,16 +13,6 @@
 .nav {
     display: flex;
     gap: 1em;
-    justify-content: center;
+    justify-content: end;
 }
 
-.address {
-    display: flex;
-    gap: 1.5em;
-    margin: 0 0 0 1em;
-    
-
-    img {
-        height: 1.3em;
-    }
-}
