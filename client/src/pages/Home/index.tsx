@@ -31,20 +31,32 @@ export default function CollectionsCard() {
           960: {
             slidesPerView: 3.3,
           },
-          830: {
+          730: {
             slidesPerView: 3,
           },
           700: {
-            slidesPerView: 2.3,
-          },
-          580: {
-            slidesPerView: 3.3,
-          },
-          450: {
             slidesPerView: 2.5,
           },
+          660: {
+            slidesPerView: 4,
+          },
+          570: {
+            slidesPerView: 3.5,
+          },
+          495: {
+            slidesPerView: 3,
+          },
+          400: {
+            slidesPerView: 2.5,
+          },
+          320: {
+            slidesPerView: 2,
+          },
           280: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.8,
+          },
+          0: {
+            slidesPerView: 1.4,
           }
         }}
       >
