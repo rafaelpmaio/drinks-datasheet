@@ -12,16 +12,23 @@ interface EditButtonProps {
   collection: ICollection;
 }
 
+const updateCollectionAtDb = (_id: string, {name, description, image} : any) => {
+  httpDatasheets.put(`collections/${_id}`, {
+    name: name,
+    description: description,
+    image: image,
+  });
+}
+
 export default function EditButton({ collection }: EditButtonProps) {
   const { name, description, image, collectionsList, setCollectionsList } =
     useContext(CollectionsContext);
   const { isOnline } = useContext(ServerStatusContext);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    
     if (!isOnline) {
       event.preventDefault();
-      const updatedCollection = collectionsList.map((col) => {
+      const updatedList = collectionsList.map((col) => {
         if (col._id === collection._id) {
           return {
             ...col,
@@ -32,15 +39,10 @@ export default function EditButton({ collection }: EditButtonProps) {
         }
         return col;
       });
-      setCollectionsList(updatedCollection);
+      setCollectionsList(updatedList);
       return;
     }
-
-    httpDatasheets.put(`collections/${collection._id}`, {
-      name: name,
-      description: description,
-      image: image,
-    });
+    updateCollectionAtDb(collection._id, {name, description, image} )
   };
 
   return (

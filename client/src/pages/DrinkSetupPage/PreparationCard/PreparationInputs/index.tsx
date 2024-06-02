@@ -13,15 +13,13 @@ export default function PreparationInputs() {
 
     const [glasswareInput, setGlasswareInput] = useState('');
     const [garnishInput, setGarnishInput] = useState('');
-    const [id, setId] = useState(0);
     const [stepInput, setStepInput] = useState("");
 
     const handleClick = (
         event: React.MouseEvent<HTMLButtonElement, MouseEvent>
     ) => {
         event.preventDefault();
-        setSteps([...steps, stepInput]);
-        setId(id + 1);
+        !stepInput ? alert("Describe the step") : setSteps([...steps, stepInput])
         setStepInput("");
     };
 
@@ -58,7 +56,7 @@ export default function PreparationInputs() {
                     className={styles.input}
                     maxLenght={100}
                 />
-                <Button onClick={handleClick}><FiSend/></Button>
+                <Button onClick={handleClick}><FiSend /></Button>
             </span>
         </div>
     )

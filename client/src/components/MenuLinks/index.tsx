@@ -7,11 +7,13 @@ import { useContext } from "react";
 import { CollectionsContext } from "state/CollectionContext";
 import { ServerStatusContext } from "state/ServerSatusContext";
 import { httpDatasheets } from "httpApi";
+import { useNavigate } from "react-router-dom";
 
 export default function MenuLinks() {
 
     const collectionsContext = useContext(CollectionsContext);
     const { isOnline } = useContext(ServerStatusContext);
+    const navigate = useNavigate()
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         const collection = collectionBuilder(collectionsContext, []);
@@ -22,6 +24,7 @@ export default function MenuLinks() {
                 ...collectionsContext.collectionsList,
                 collection,
             ]);
+            navigate("/");
             return;
         }
 

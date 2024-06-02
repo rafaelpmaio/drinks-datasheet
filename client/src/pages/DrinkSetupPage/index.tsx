@@ -5,46 +5,53 @@ import PreparationCard from "./PreparationCard";
 import styles from "./DrinkSetupPage.module.scss";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 import drinkBuilder from "shared/builders/drinkBuilder";
-import validateDrink from "errors/validateDrink";
 import { CollectionsContext } from "state/CollectionContext";
 import { httpDatasheets } from "httpApi";
 import CollectionDatalist from "./CollectionDatalist";
+import { ICollection } from "shared/interfaces/ICollection";
+import { IDrink } from "shared/interfaces/IDrink";
+import { ServerStatusContext } from "state/ServerSatusContext";
+import { useNavigate } from 'react-router-dom';
+
+
+const createDrinkAtDb = (selectedCollection: ICollection, drink: IDrink) => {
+  httpDatasheets
+    .post("drinks", {
+      collectionId: selectedCollection._id,
+      ...drink,
+    })
+    .then(() => {
+      alert("drink saved!");
+    });
+}
 
 export default function DrinkSetupPage() {
   const drinkContext = useContext(DrinkCreationContext);
-  const { selectedCollection } = useContext(CollectionsContext);
+  const { selectedCollection, collectionsList, setCollectionsList } = useContext(CollectionsContext);
+  const { isOnline } = useContext(ServerStatusContext);
+  const navigate = useNavigate();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-
-    // MÉTODO PARA NAVEGAR PARA A COLEÇÃO ATUALIZADA, PRECISA IMPLEMENTAR COM WEBSOCKET
-    // const { setHeaderData } = useContext(DynamicHeaderContext);
-    // const navigate = useNavigate();
-    // let collectionNameWithoutSpecialChars = removeSpecialCharsFromString(
-    //   selectedCollection.name
-    // );
-    // const header = headerBuilder(
-    //   selectedCollection.image,
-    //   selectedCollection.name,
-    //   selectedCollection.description
-    // );
-    // dentro do Handler VV
-    // setHeaderData(header);
-    // navigate(
-    //   `/collection/${selectedCollection._id}#${collectionNameWithoutSpecialChars}`
-    // , {unstable_viewTransition: true});
-    event.preventDefault();
     const drink = drinkBuilder(drinkContext);
 
-    validateDrink(drinkContext);
-
-    httpDatasheets
-      .post("drinks", {
-        collectionId: selectedCollection._id,
-        ...drink,
-      })
-      .then(() => {
-        alert("drink saved!");
+    if (!isOnline) {
+      event.preventDefault();
+      const updatedDrinks = [...selectedCollection.drinksList, drink];
+      const updatedCollectionsList = collectionsList.map((col) => {
+        if (col._id === selectedCollection._id) {
+          return {
+            ...col,
+            drinksList: updatedDrinks
+          };
+        }
+        return col;
       });
+      setCollectionsList(updatedCollectionsList);
+      navigate(`/collection/${selectedCollection._id}#${selectedCollection.name}`)
+      return
+    }
+
+    createDrinkAtDb(selectedCollection, drink)
   };
 
   return (
