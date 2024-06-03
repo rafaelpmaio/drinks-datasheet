@@ -1,10 +1,12 @@
 import styles from "./IngredientsList.module.scss";
 import IngredientListItem from "pages/DrinkSetupPage/IngredientsCard/IngredientsList/IngredientListItem";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DrinkCreationContext } from "state/DrinkCreationContext";
 
 export default function IngredientsList() {
-  const { ingredients } = useContext(DrinkCreationContext);
+  const { ingredients, setIngredients } = useContext(DrinkCreationContext);
+
+  useEffect(() => {setIngredients([])}, [])
 
   return (
     <div className={styles.ingredients_div}>

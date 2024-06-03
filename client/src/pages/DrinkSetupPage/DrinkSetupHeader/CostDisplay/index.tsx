@@ -18,10 +18,10 @@ export default function CostDisplay({ inputSellPrice }: CostDisplayProps) {
     <div className={styles.cost_div}>
       <p className={styles.cost_result_line}>
         Production Cost:
-        <b className={styles.highlight}> R${confectionCost}</b>
+        <b className={styles.highlight}> R${confectionCost.toFixed(2)}</b>
       </p>
       <p className={styles.cost_result_line}>
-        Cost Percentage: <b className={styles.highlight}>{costPercentage}%</b>
+        Cost Percentage: <b className={styles.highlight}>{costPercentage.toFixed(2)}%</b>
       </p>
     </div>
   );

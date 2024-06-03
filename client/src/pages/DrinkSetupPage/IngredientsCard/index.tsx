@@ -4,12 +4,10 @@ import IngredientsList from "./IngredientsList";
 import IngredientInputs from "./IngredientInputs";
 import DialogBox from 'components/DialogBox';
 import { useContext, useState } from 'react';
-import validateInputIsFilled from 'errors/validateInputIsFilled';
 import ingredientBuilder from 'shared/builders/ingredientBuilder';
 import resetInputs from 'shared/utils/resetInputs';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
 import { VscNewFile } from "react-icons/vsc";
-
 
 export default function IngredientsCard() {
 
@@ -25,8 +23,6 @@ export default function IngredientsCard() {
     ) => {
 
         event.preventDefault();
-
-        validateInputIsFilled(amount, measureUnit, ingredient, cost);
 
         let newIngredient = ingredientBuilder(
             amount,
@@ -49,6 +45,7 @@ export default function IngredientsCard() {
                 title='add a new Ingredient'
                 buttonText={<VscNewFile/>}
                 onClick={onClick}
+                disabled={!amount || !ingredient || !cost || !measureUnit}
                 contentText={<IngredientInputs
                     amount={amount}
                     setAmount={setAmount}

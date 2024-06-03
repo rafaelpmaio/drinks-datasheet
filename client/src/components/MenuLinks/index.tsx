@@ -44,6 +44,7 @@ export default function MenuLinks() {
                 contentText={<NewCollectionInputs />}
                 buttonText="New Collection"
                 handleSubmit={handleSubmit}
+                disabled={!collectionsContext.name}
             />
         </>
 

@@ -1,6 +1,6 @@
 import styles from './PreparationCard.module.scss';
 import themeStyles from 'styles/theme.module.scss'
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
 import Button from 'components/Button';
 import PreparationInputs from 'pages/DrinkSetupPage/PreparationCard/PreparationInputs';
@@ -8,8 +8,9 @@ import { MdDelete } from 'react-icons/md';
 
 
 export default function PreparationCard() {
-
     const { steps, setSteps } = useContext(DrinkCreationContext);
+
+    useEffect(() => {setSteps([])}, [])
 
     return (
         <section className={`${styles.preparation_card} ${themeStyles.card}`} >

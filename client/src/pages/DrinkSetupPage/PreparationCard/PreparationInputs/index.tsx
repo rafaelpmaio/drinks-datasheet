@@ -26,7 +26,7 @@ export default function PreparationInputs() {
     useEffect(() => {
         setGarnish(garnishInput);
         setGlassware(glasswareInput);
-    }, [])
+    }, [garnishInput, glasswareInput])
 
 
     return (
@@ -56,7 +56,7 @@ export default function PreparationInputs() {
                     className={styles.input}
                     maxLenght={100}
                 />
-                <Button onClick={handleClick}><FiSend /></Button>
+                <Button onClick={handleClick} ><FiSend /></Button>
             </span>
         </div>
     )

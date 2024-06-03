@@ -21,15 +21,15 @@ export default function DrinkDatasheetHeader({
       <div className={styles.cost_div}>
         <p className={styles.cost_line}>
           Sell Price:
-          <strong className={styles.highlight}> R${sellPrice}</strong>
+          <strong className={styles.highlight}> R${sellPrice.toFixed(2)}</strong>
         </p>
         <p className={styles.cost_line}>
           Production Cost:
-          <strong className={styles.highlight}> R${confectionCost} </strong>
+          <strong className={styles.highlight}> R${confectionCost.toFixed(2)} </strong>
         </p>
         <p className={styles.cost_line}>
           Cost Percentage:
-          <strong className={styles.highlight}>{costPercentage}%</strong>
+          <strong className={styles.highlight}>{costPercentage.toFixed(2)}%</strong>
         </p>
       </div>
     </div>

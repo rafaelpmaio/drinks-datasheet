@@ -14,9 +14,7 @@ export default function Inputs({ inputSellPrice, setInputSellPrice }: Inputs) {
     const { setName } = useContext(DrinkCreationContext);
     const { setSellPrice } = useContext(DrinkCreationContext);
 
-    useEffect(() => setName(nameInput), [nameInput])
-
-
+    useEffect(() => setSellPrice(0), [])
 
     return (
         <div className={styles.inputs_div}>
@@ -24,7 +22,10 @@ export default function Inputs({ inputSellPrice, setInputSellPrice }: Inputs) {
                 id='drink-name'
                 labelText='Drink Name'
                 value={nameInput}
-                onChange={setNameInput}
+                onChange={value => {
+                    setNameInput(value);
+                    setName(nameInput)
+                }}
                 required
             />
             <Input

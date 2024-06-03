@@ -1,5 +1,5 @@
 import InputFile from "components/InputFile";
-import { Input, InputLabel, Stack, TextField } from "@mui/material";
+import { Stack, TextField } from "@mui/material";
 import { useContext } from "react";
 import styles from "./CollectionInfosInputs.module.scss";
 import { CollectionsContext } from "state/CollectionContext";

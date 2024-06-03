@@ -15,7 +15,7 @@ export default function CollectionsCard() {
   const { collectionsList } = useContext(CollectionsContext);
 
   useEffect(() => {
-    getCollections();
+    !collectionsList.length && getCollections() 
   }, []);
 
   return (
