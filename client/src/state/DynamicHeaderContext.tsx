@@ -14,7 +14,7 @@ export const DynamicHeaderContext = React.createContext(
 
 const defaultHeader: IHeader = {
   collectionId: 0,
-  collectionName: "Collections Datasheet App",
+  collectionName: "DRINKS DATASHEET APP",
   collectionImage: drinkLogo,
 };
 

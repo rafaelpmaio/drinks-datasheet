@@ -39,7 +39,7 @@ export default function CollectionDisplay({
             className={`${styles.collection_img} ${_id === "0" ? styles.default_img : styles.selected_collection_img
               }`}
             src={handleImageFormat(image, "collections")}
-            alt={`${name}`}
+            alt={name}
           />
         </picture>
         <span className={styles.collection_infos}>

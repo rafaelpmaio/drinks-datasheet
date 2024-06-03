@@ -1,6 +1,6 @@
 [
   {
-    "_id": "0",
+    "_id": "1",
     "name": "Summer Season",
     "image": "summer-collection.webp",
     "description": "Valid untill March 2023",
@@ -231,7 +231,7 @@
   }
   ,
   {
-    "_id": "1",
+    "_id": "2",
     "name": "Happy Hour",
     "image": "happy-hour.webp",
     "drinksList": [
@@ -363,7 +363,7 @@
     ]
   },
   {
-    "_id": "2",
+    "_id": "3",
     "name": "Agave Festival",
     "image": "agave-festival.webp",
     "description": "Celebration of 'Dia de los Muertos'",
@@ -568,7 +568,7 @@
     ]
   },
   {
-    "_id": "3",
+    "_id": "4",
     "name": "Tropical",
     "image": "tropical-collection.webp",
     "description": "Tribute to 80 years of Tropicalia - Brazilian cultural movement",
@@ -760,13 +760,13 @@
     ]
   },
   {
-    "_id": "4",
+    "_id": "5",
     "name": "Holidays",
     "image": "holidays.webp",
     "drinksList": []
   },
   {
-    "_id": "5",
+    "_id": "6",
     "name": "Women's Month",
     "image": "womens-month.webp",
     "drinksList": []

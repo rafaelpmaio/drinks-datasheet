@@ -4,7 +4,6 @@ import InputFile from 'components/InputFile';
 import { useContext } from 'react';
 import { DrinkCreationContext } from 'state/DrinkCreationContext';
 
-
 export default function DrinkPhoto() {
 
     const { setImage } = useContext(DrinkCreationContext);

@@ -59,4 +59,4 @@ const CollectionsContextProvider = ({
   );
 };
 
-export { CollectionsContext, CollectionsContextProvider };
+export { CollectionsContext, CollectionsContextProvider, defaultCollection };

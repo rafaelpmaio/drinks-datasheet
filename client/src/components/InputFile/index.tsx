@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from 'assets/images/drink-logo.png'
 
 interface InputFileProps {
   labelStyle?: string;
@@ -30,6 +31,7 @@ export default function InputFile({
   }
 
   useEffect(() => setImage(fileBase64), [fileBase64]);
+  useEffect(() => setImage(logo), []);
 
   return (
     <label className={labelStyle}>
