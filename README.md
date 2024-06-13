@@ -3,7 +3,7 @@
 > _WebApp that helps you to create, price and organize your drinks into collections._
 <br>
 
-### 👇🏾Choose the language of your preference 
+### 👇🏾Idioma / Language 
 <details>
 <summary> pt-BR </summary>
  
