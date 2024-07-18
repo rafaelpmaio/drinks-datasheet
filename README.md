@@ -46,7 +46,7 @@ NodeJS | React | Typescript | Express | Mongoose
  
 </a>
 
-*O servidor API só está disponível em localhost, os drinks criados não serão persistidos*<br>
+*O servidor API só está disponível apenas em localhost, os drinks criados não serão persistidos*<br>
 *The API server is available only at localhost, drinks created won't persist*
 
 ## 📞 Contato / Contact 
