@@ -292,7 +292,7 @@
           {
             "_id": "1",
             "amount": 3,
-            "measureUnit": "dashes",
+            "measureUnit": "dash",
             "ingredient": "Angostura",
             "cost": 0.6
           },
@@ -425,13 +425,6 @@
             "amount": 50,
             "measureUnit": "ml",
             "ingredient": "Tequila Prata",
-            "cost": 8
-          },
-          {
-            "_id": "0",
-            "amount": 50,
-            "measureUnit": "ml",
-            "ingredient": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
             "cost": 8
           },
           {

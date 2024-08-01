@@ -8,6 +8,7 @@ import { CollectionsContext } from "state/CollectionContext";
 import { ServerStatusContext } from "state/ServerSatusContext";
 import { httpDatasheets } from "httpApi";
 import { useNavigate } from "react-router-dom";
+import { Box } from "@mui/material";
 
 export default function MenuLinks() {
 
@@ -34,8 +35,7 @@ export default function MenuLinks() {
     };
 
     return (
-        <>
-            <MenuLink hrefPage="/" > Collections </MenuLink>
+        <Box display="flex" gap={2} alignItems="center">
             <MenuLink hrefPage="/new_drink"> New Drink </MenuLink>
             <DialogBox
                 title="Create a new Collection"
@@ -46,7 +46,7 @@ export default function MenuLinks() {
                 handleSubmit={handleSubmit}
                 disabled={!collectionsContext.name}
             />
-        </>
+        </Box>
 
     )
 }

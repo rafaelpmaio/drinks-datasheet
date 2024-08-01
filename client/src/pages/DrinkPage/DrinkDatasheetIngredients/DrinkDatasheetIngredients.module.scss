@@ -2,7 +2,6 @@
 
 .ingredients_div {
     grid-area: ingredients;
-    border-right: solid var(--cinza-claro) ;
     padding-right: 20px;
 }
 
@@ -20,7 +19,7 @@
     grid-template-areas:
         "amount unit ingredient cost"
     ;
-    grid-template-columns: 30px 30px auto 30px;
+    grid-template-columns: 30px 35px auto 30px;
     gap: 25px;
 }
 

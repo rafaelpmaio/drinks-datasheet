@@ -3,7 +3,7 @@ import styles from "../MenuLinks.module.scss";
 
 interface MenuLinkProps {
   hrefPage: string;
-  children: string;
+  children: any;
   onClick?: (event: any) => void;
 }
 

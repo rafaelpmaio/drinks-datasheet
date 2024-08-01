@@ -9,12 +9,7 @@ import { ICollection } from "shared/interfaces/ICollection";
 import removeSpecialCharsFromString from "shared/utils/removeSpecialCharsFromString";
 import EditButton from "components/EditButtom";
 
-export default function CollectionDisplay({
-  name,
-  image,
-  _id,
-  description,
-}: ICollection) {
+export default function CollectionDisplay({ name, image, _id, description, }: ICollection) {
   const { setHeaderData: setHeaderInfos } = useContext(DynamicHeaderContext);
   const collectionHtmlDivElement = React.useRef<HTMLDivElement>(null);
 
