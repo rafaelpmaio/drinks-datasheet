@@ -1,9 +1,9 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .default{
-    background-color: var(--rosa);
+    background-color: $rosa;
     padding: 0.2em 0.5em;
-    color: var(--azul-escuro);
+    color: $azul-escuro;
     border: none;
     border-radius: 4px;
 }
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     margin: auto;
-    background-color: var(--vermelho);
+    background-color: $vermelho;
 }
 
 @media only screen and (max-width: 690px) {

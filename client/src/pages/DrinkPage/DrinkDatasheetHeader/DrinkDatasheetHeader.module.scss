@@ -1,3 +1,5 @@
+@import "styles/abstract/vars";
+
 .drink_header {
     grid-area: header;
     display: grid;
@@ -25,7 +27,7 @@
 }
 
 .highlight {
-    color: var(--roxo);
+    color: $roxo;
     margin-left: 5px;
 }
 

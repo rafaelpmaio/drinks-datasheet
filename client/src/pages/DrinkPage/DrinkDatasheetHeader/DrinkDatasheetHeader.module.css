@@ -1,0 +1,64 @@
+.drink_header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "image name cost";
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.image {
+  grid-area: image;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 160px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.drink_name {
+  grid-area: name;
+  text-align: center;
+}
+
+.cost_div {
+  grid-area: cost;
+}
+
+.highlight {
+  color: var(--roxo);
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 660px) {
+  .drink_header {
+    grid-template-areas: "image name" "cost cost";
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+  }
+  .cost_div {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+  .cost_line {
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .drink_header {
+    grid-template-areas: "image" "name" "cost";
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  .image {
+    width: 100%;
+  }
+  .drink_name {
+    text-align: left;
+  }
+  .cost_div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}/*# sourceMappingURL=DrinkDatasheetHeader.module.css.map */

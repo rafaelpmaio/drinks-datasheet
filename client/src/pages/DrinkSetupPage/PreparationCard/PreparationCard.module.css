@@ -1,0 +1,70 @@
+@import url("styles/_variaveis.scss");
+.preparation_card {
+  grid-area: preparation;
+  display: grid;
+  grid-template-areas: "title subtitle subtitle" "inputs list submitBtn";
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+
+.title {
+  grid-area: title;
+}
+
+.subtitle {
+  grid-area: subtitle;
+}
+
+.list {
+  grid-area: list;
+  height: 150px;
+  background-color: white;
+  color: var(--azul-escuro);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.list_item {
+  display: grid;
+  grid-template-areas: "step deleteBtn";
+  align-items: center;
+  grid-template-columns: 80% auto;
+}
+
+.step {
+  grid-area: step;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.deleteBtn {
+  grid-area: deleteBtn;
+}
+
+.submitBtn {
+  grid-area: submitBtn;
+  height: 60px;
+  width: 90px;
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: self-end;
+  justify-self: end;
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1080px) {
+  .preparation_card {
+    grid-template-areas: "title" "inputs" "subtitle" "list" "submitBtn";
+    grid-template-columns: auto;
+  }
+  .subtitle {
+    margin: 1em 0 1em 0;
+  }
+}/*# sourceMappingURL=PreparationCard.module.css.map */

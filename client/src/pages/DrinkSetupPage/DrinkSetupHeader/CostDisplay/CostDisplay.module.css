@@ -1,0 +1,28 @@
+@import url("styles/_variaveis.scss");
+.cost_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.highlight {
+  color: var(--rosa);
+  margin-left: 0.3em;
+}
+
+.cost_result_line {
+  margin: 0.3em 0;
+}
+
+@media only screen and (max-width: 670px) {
+  .cost_div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .cost_div {
+    justify-content: left;
+    gap: 1em;
+  }
+}/*# sourceMappingURL=CostDisplay.module.css.map */

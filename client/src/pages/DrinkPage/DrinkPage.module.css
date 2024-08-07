@@ -1,0 +1,26 @@
+.drink_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drink_section {
+  display: grid;
+  grid-template-areas: "header header" "ingredients preparation" "decoration decoration";
+  grid-template-columns: 1fr 45%;
+  row-gap: 1em;
+  -moz-column-gap: 2.5em;
+       column-gap: 2.5em;
+  height: 550px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+@media only screen and (max-width: 800px) {
+  .drink_section {
+    grid-template-areas: "header" "ingredients" "preparation" "decoration";
+    grid-template-columns: 100%;
+    height: auto;
+    gap: 3em;
+  }
+}/*# sourceMappingURL=DrinkPage.module.css.map */

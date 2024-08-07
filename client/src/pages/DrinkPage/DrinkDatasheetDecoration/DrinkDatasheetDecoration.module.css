@@ -1,0 +1,17 @@
+.decoration_div {
+  grid-area: decoration;
+  display: flex;
+  justify-content: space-around;
+}
+
+.decoration_row {
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+}
+
+@media only screen and (max-width: 660px) {
+  .decoration_div {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=DrinkDatasheetDecoration.module.css.map */

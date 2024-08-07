@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 input {
     border-radius: 4px;
@@ -15,14 +15,14 @@ input {
 label {
     position: absolute;
     font-size: 0.8em;
-    color: var(--azul-escuro);
+    color: $azul-escuro;
     left: 1em;
     bottom: 0.5em;
 }
 
 input:focus+label {
     transition: 0.2s;
-    color: var(--rosa);
+    color: $rosa;
     font-size: 0.9em;
     font-weight: 500;
     bottom: 2.3em;
@@ -30,7 +30,7 @@ input:focus+label {
 }
 
 .input_has_value {
-    color: var(--rosa);
+    color: $rosa;
     font-size: 0.9em;
     font-weight: 500;
     bottom: 2em;

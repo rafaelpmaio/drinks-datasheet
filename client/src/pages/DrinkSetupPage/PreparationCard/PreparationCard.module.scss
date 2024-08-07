@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .preparation_card {
     grid-area: preparation;
@@ -23,7 +23,7 @@
     grid-area: list;
     height: 150px;
     background-color: white;
-    color: var(--azul-escuro);
+    color: $azul-escuro;
     overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 5px;

@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .drink_photo_div {
     margin: 0;
@@ -9,7 +9,7 @@
     width: 20em;
     height: 12em;
     border: 2px dashed;
-    color: var(--cor-de-texto);
+    color: $cor-texto;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -25,13 +25,13 @@
 }
 
 .drink_photo_div span {
-    background-color: var(--azul-claro);
+    background-color: $azul-claro;
     padding: 0.1em 0.5em;
     border-radius: 20px;
 }
 
 .drink_photo_div:hover {
-    color: var(--azul-escuro);
+    color: $azul-escuro;
 }
 
 .input {

@@ -1,0 +1,11 @@
+.inputs_div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+@media only screen and (max-width: 670px) {
+  .inputs_div {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=Inputs.module.css.map */

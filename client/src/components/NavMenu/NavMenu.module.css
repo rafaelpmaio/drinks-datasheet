@@ -1,0 +1,16 @@
+@import url("styles/_variaveis.scss");
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  width: 100%;
+  gap: 3em;
+  padding: 0.3em;
+  background-color: var(--cinza-claro);
+}
+
+.nav {
+  display: flex;
+  gap: 1em;
+  justify-content: end;
+}/*# sourceMappingURL=NavMenu.module.css.map */

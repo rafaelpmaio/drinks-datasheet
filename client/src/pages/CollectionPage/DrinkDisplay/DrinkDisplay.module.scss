@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .drink_display {
     display: flex;
@@ -19,7 +19,7 @@
 
 .drink_name {
     background-color: white;
-    color: var(--azul-claro);
+    color: $azul-claro;
     margin: 0;
     padding: 20px 0 20px 0;
     border-bottom-left-radius: 20px;
@@ -27,7 +27,7 @@
 }
 
 .drinkDisplay:hover {
-    box-shadow: 0 0 40px var(--rosa);
+    box-shadow: 0 0 40px $rosa;
 }
 
 

@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .header {
     display: grid;
@@ -7,7 +7,7 @@
     width: 100%;
     gap: 3em;
     padding: 0.3em;
-    background-color: var(--cinza-claro);
+    background-color: $cinza-claro;
 }
 
 .nav {

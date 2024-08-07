@@ -1,10 +1,10 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 .link {
-    color: var(--azul-escuro);
+    color: $azul-escuro;
 }
 
 .link:hover {
-    color: var(--roxo)
+    color: $roxo;
 }
 
 a {

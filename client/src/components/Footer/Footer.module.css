@@ -1,0 +1,18 @@
+@import url("styles/_variaveis.scss");
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--azul-escuro);
+  padding: 0.3em;
+  text-align: center;
+}
+
+.footer_adress {
+  margin: 0;
+}
+
+.footer_logo {
+  height: 1.3em;
+  margin-right: 2em;
+}/*# sourceMappingURL=Footer.module.css.map */

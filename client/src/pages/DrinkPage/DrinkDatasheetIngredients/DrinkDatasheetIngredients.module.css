@@ -1,0 +1,45 @@
+.ingredients_div {
+  grid-area: ingredients;
+  padding-right: 20px;
+}
+
+.list {
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 160px;
+  margin-bottom: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-areas: "amount unit ingredient cost";
+  grid-template-columns: 30px 35px auto 30px;
+  gap: 25px;
+}
+
+.amount_column {
+  grid-area: amount;
+}
+
+.measure_unit_column {
+  grid-area: unit;
+}
+
+.ingredient_column {
+  grid-area: ingredient;
+}
+
+.cost_column {
+  grid-area: cost;
+}
+
+@media only screen and (max-width: 800px) {
+  .ingredients_div {
+    border-right: none;
+  }
+  .list {
+    height: auto;
+  }
+}/*# sourceMappingURL=DrinkDatasheetIngredients.module.css.map */

@@ -1,0 +1,67 @@
+@import-normalize;
+/* Tipografia */
+/* cores */
+body {
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(#041833, #154580);
+  box-sizing: border-box;
+  font-family: "GandhiSansRegular";
+  color: #d9d9d9;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+h1 {
+  font-family: "GandhiSansBold";
+  color: #c98cf1;
+}
+
+h2 {
+  color: #c98cf1;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+  color: #7b78e5;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@font-face {
+  font-family: "GandhiSansRegular";
+  src: local("GandhiSansRegular"), url("../assets/fonts/GandhiSans-Regular.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GandhiSansBold";
+  src: local("GandhiSansBold"), url("../assets/fonts/GandhiSans-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}/*# sourceMappingURL=index.css.map */

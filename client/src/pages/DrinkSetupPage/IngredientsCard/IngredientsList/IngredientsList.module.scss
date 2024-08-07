@@ -1,8 +1,10 @@
+@import "styles/abstract/vars";
+
 .list {
     height: 150px;
     background-color: white;
     border-radius: 10px;
-    color: var(--azul-escuro);
+    color: $azul-escuro;
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 10px;

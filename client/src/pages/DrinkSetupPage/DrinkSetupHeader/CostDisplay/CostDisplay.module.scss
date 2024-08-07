@@ -1,4 +1,4 @@
-@import url('styles/_variaveis.scss');
+@import 'styles/abstract/vars';
 
 .cost_div {
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 .highlight {
-    color: var(--rosa);
+    color: $rosa;
     margin-left: 0.3em;
 }
 

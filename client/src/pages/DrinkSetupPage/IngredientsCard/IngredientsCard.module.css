@@ -1,0 +1,5 @@
+.ingredients_card {
+  grid-area: ingredients;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}/*# sourceMappingURL=IngredientsCard.module.css.map */
