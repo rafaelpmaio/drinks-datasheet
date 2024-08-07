@@ -3,7 +3,7 @@
 > _WebApp that helps you to create, price and organize your drinks into collections._
 <br>
 
-### 👇🏾Choose the language of your preference 
+### 👇🏾Idioma / Language 
 <details>
 <summary> pt-BR </summary>
  
@@ -46,7 +46,7 @@ NodeJS | React | Typescript | Express | Mongoose
  
 </a>
 
-*O servidor API só está disponível em localhost, os drinks criados não serão persistidos*<br>
+*O servidor API só está disponível apenas em localhost, os drinks criados não serão persistidos*<br>
 *The API server is available only at localhost, drinks created won't persist*
 
 ## 📞 Contato / Contact 
